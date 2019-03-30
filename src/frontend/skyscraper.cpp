@@ -98,9 +98,9 @@ namespace Skyscraper {
 
 bool Skyscraper::OnInit(void)
 {
-	version = "1.11";
+	version = "2.0";
 	version_rev = SVN_REVSTR;
-	version_state = "Alpha";
+	version_state = "Alpha 10";
 	version_frontend = version + ".0." + version_rev;
 	StartupRunning = false;
 	Pause = false;
