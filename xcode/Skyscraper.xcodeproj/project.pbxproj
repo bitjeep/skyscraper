@@ -193,6 +193,7 @@
 		F2635BC9224FE56B00CAEEE1 /* SkyLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB0224FE56B00CAEEE1 /* SkyLight.cpp */; };
 		F2635BCA224FE56B00CAEEE1 /* Astronomy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB2224FE56B00CAEEE1 /* Astronomy.cpp */; };
 		F2635BCB224FE56B00CAEEE1 /* SkyDome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB3224FE56B00CAEEE1 /* SkyDome.cpp */; };
+		F26614EB22500F6E0011DA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21BE947224D2F34001D1B8A /* Assets.xcassets */; };
 		F2AE7C18224E857E00603D42 /* RenderSystem_GL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C12224E653700603D42 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F2AE7C1A224E863C00603D42 /* Plugin_OctreeSceneManager.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C19224E861E00603D42 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F2AE7C1E224EB44F00603D42 /* Codec_FreeImage.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C1B224EB0CE00603D42 /* Codec_FreeImage.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -1093,6 +1094,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26614EB22500F6E0011DA94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
