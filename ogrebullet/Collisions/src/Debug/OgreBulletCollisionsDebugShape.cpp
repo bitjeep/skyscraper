@@ -58,17 +58,25 @@ void DebugCollisionShape::setStatemode(DebugCollisionShape::Mode mode)
 		switch(mStatemode)
 		{
 			case DebugCollisionShape::Mode_Enabled:
-				setMaterial("OgreBulletCollisionsDebugLines/Enabled");
-			break;
+            {
+                MaterialPtr mat = MaterialManager::getSingleton().getByName("OgreBulletCollisionsDebugLines/Enabled");
+                setMaterial(mat);
+                break;
+            }
 
 			case DebugCollisionShape::Mode_Disabled:
-				setMaterial("OgreBulletCollisionsDebugLines/Disabled");
-
-			break;
+            {
+                MaterialPtr mat = MaterialManager::getSingleton().getByName("OgreBulletCollisionsDebugLines/Disabled");
+                setMaterial(mat);
+                break;
+            }
 
 			case DebugCollisionShape::Mode_Static:
-				setMaterial("OgreBulletCollisionsDebugLines/Static");
-			break;
+            {
+                MaterialPtr mat = MaterialManager::getSingleton().getByName("OgreBulletCollisionsDebugLines/Static");
+                setMaterial(mat);
+                break;
+            }
 		}
 	}
 }

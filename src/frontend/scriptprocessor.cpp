@@ -285,13 +285,21 @@ bool ScriptProcessor::LoadDataFile(const std::string &filename, bool insert, int
 		Simcore->Report("Filename: '" + Filename + "'");
 
 	//load file
-#if OGRE_VERSION >= 0x00010900
+#if OGRE_VERSION >= 0x00010B00
+    Ogre::FileSystemArchiveFactory factory;
+    Ogre::Archive *archive = factory.createInstance(".", true);
+    archive->load();
+#elif OGRE_VERSION >= 0x00010900
 	Ogre::FileSystemArchive filesystem(".", "FileSystem", true);
 #else
 	Ogre::FileSystemArchive filesystem(".", "FileSystem");
 #endif
 
-	Ogre::DataStreamPtr filedata;
+    Ogre::DataStreamPtr filedata;
+#if OGRE_VERSION >= 0x00010B00
+    filedata = archive->open(Filename, true);
+    factory.destroyInstance(archive);
+#else
 	try
 	{
 		filedata = filesystem.open(Filename, true);
@@ -305,6 +313,7 @@ bool ScriptProcessor::LoadDataFile(const std::string &filename, bool insert, int
 			ScriptError(msg);
 		return false;
 	}
+#endif
 
 	//exit if an error occurred while loading
 	if(filedata.isNull())

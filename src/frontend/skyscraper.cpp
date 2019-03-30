@@ -51,7 +51,7 @@
 #include "mainscreen.h"
 #include "loaddialog.h"
 #include "profiler.h"
-#include "revmain.h"
+#include "svnrev.h"
 
 #if OGRE_VERSION >= 0x00010900
 #include <OgreOverlaySystem.h>
@@ -484,7 +484,7 @@ bool Skyscraper::Initialize()
 			if(!mRoot->restoreConfig())
 			{
 				//show dialog if load failed
-				mRoot->showConfigDialog();
+				mRoot->showConfigDialog(NULL);
 			}
 		}
 	}
@@ -497,8 +497,8 @@ bool Skyscraper::Initialize()
 	Ogre::RenderSystem *rendersystem = mRoot->getRenderSystem();
 	if (rendersystem)
 	{
-		Ogre::ConfigOptionMap& CurrentRendererOptions = mRoot->getRenderSystem()->getConfigOptions();
-		Ogre::ConfigOptionMap::iterator configItr = CurrentRendererOptions.begin();
+		const Ogre::ConfigOptionMap& CurrentRendererOptions = mRoot->getRenderSystem()->getConfigOptions();
+		Ogre::ConfigOptionMap::const_iterator configItr = CurrentRendererOptions.begin();
 
 		for (; configItr != CurrentRendererOptions.end(); configItr++)
 		{
@@ -954,7 +954,9 @@ void Skyscraper::DrawImage(const std::string &filename, buttondata *button, Real
 				Filename = filename_pressed;
 
 			//create new material
-			Ogre::MaterialPtr mat = Ogre::MaterialManager::getSingleton().create(Filename, "General");
+            Ogre::MaterialPtr mat = Ogre::MaterialManager::getSingleton().getByName(Filename, "General");
+            if (mat.isNull())
+                mat = Ogre::MaterialManager::getSingleton().create(Filename, "General");
 
 			//load image data from file
 			Ogre::Image img;
@@ -1106,7 +1108,8 @@ void Skyscraper::DrawImage(const std::string &filename, buttondata *button, Real
 		//create rectangle
 		Ogre::Rectangle2D* rect = new Ogre::Rectangle2D(true);
 		rect->setCorners(x, -y, x + w, -(y + h));
-		rect->setMaterial(material);
+        Ogre::MaterialPtr mat = Ogre::MaterialManager::getSingleton().getByName(material);
+		rect->setMaterial(mat);
 		if (background == true)
 			rect->setRenderQueueGroup(Ogre::RENDER_QUEUE_BACKGROUND);
 
@@ -1769,12 +1772,23 @@ void Skyscraper::UpdateSky()
 
 void Skyscraper::messageLogged(const Ogre::String &message, Ogre::LogMessageLevel lml, bool maskDebug, const Ogre::String &logName, bool &skipThisMessage)
 {
+#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE
+    if (console)
+    {
+        __block Ogre::String blkMessage = message;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            console->Write(blkMessage);
+            console->Update();
+        });
+    }
+#else
 	//callback function that receives OGRE log messages
 	if (console)
 	{
 		console->Write(message);
 		console->Update();
 	}
+#endif
 }
 
 void Skyscraper::ShowConsole(bool send_button)

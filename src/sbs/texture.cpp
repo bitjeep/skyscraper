@@ -70,8 +70,8 @@ TextureManager::TextureManager(Object *parent) : ObjectBase(parent)
 	{
 		MapIndex[i] = 0;
 		OldMapIndex[i] = 0;
-		OldMapUV[i] = 0;
-		MapUV[i] = 0;
+        OldMapUV[i] = Ogre::Vector2::ZERO;
+        MapUV[i] = Ogre::Vector2::ZERO;
 	}
 	DefaultMapper = sbs->GetConfigInt("Skyscraper.SBS.TextureMapper", 0);
 	texturecount = 0;

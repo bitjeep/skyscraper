@@ -106,7 +106,8 @@ DebugLines::DebugLines() : SimpleRenderable()
 		blue->getTechnique(0)->getPass(0)->setDepthBias(1.0f);
     }
     setCastShadows (false);
-    this->setMaterial("OgreBulletCollisionsDebugLines/Enabled");
+    MaterialPtr mat = MaterialManager::getSingleton().getByName("OgreBulletCollisionsDebugLines/Enabled");
+    this->setMaterial(mat);
 }
 
 

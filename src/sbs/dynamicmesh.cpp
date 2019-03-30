@@ -622,7 +622,7 @@ DynamicMesh::Mesh::~Mesh()
 	}
 	client_entries.clear();
 
-	if (MeshWrapper.get())
+    if (MeshWrapper.get() && Ogre::MeshManager::getSingleton().resourceExists(MeshWrapper->getHandle()))
 		Ogre::MeshManager::getSingleton().remove(MeshWrapper->getHandle());
 	MeshWrapper.setNull();
 }

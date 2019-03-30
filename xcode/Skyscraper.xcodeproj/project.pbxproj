@@ -1,0 +1,1468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F21BE9AD224D314B001D1B8A /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE95C224D3147001D1B8A /* model.cpp */; };
+		F21BE9AE224D314B001D1B8A /* door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE95E224D3147001D1B8A /* door.cpp */; };
+		F21BE9AF224D314B001D1B8A /* movingwalkway.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE95F224D3147001D1B8A /* movingwalkway.cpp */; };
+		F21BE9B0224D314B001D1B8A /* stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE960224D3147001D1B8A /* stairs.cpp */; };
+		F21BE9B1224D314B001D1B8A /* elevator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE962224D3147001D1B8A /* elevator.cpp */; };
+		F21BE9B2224D314B001D1B8A /* shaft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE964224D3147001D1B8A /* shaft.cpp */; };
+		F21BE9B3224D314B001D1B8A /* person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE965224D3147001D1B8A /* person.cpp */; };
+		F21BE9B4224D314B001D1B8A /* texmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE966224D3147001D1B8A /* texmap.cpp */; };
+		F21BE9B5224D314B001D1B8A /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE967224D3147001D1B8A /* random.cpp */; };
+		F21BE9B6224D314B001D1B8A /* step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE969224D3147001D1B8A /* step.cpp */; };
+		F21BE9B7224D314B001D1B8A /* escalator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE96A224D3147001D1B8A /* escalator.cpp */; };
+		F21BE9B8224D314B001D1B8A /* elevatorcar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE96D224D3147001D1B8A /* elevatorcar.cpp */; };
+		F21BE9B9224D314B001D1B8A /* polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE96F224D3148001D1B8A /* polygon.cpp */; };
+		F21BE9BA224D314B001D1B8A /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE971224D3148001D1B8A /* mesh.cpp */; };
+		F21BE9BB224D314B001D1B8A /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE972224D3148001D1B8A /* control.cpp */; };
+		F21BE9BC224D314B001D1B8A /* cameratexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE976224D3148001D1B8A /* cameratexture.cpp */; };
+		F21BE9BD224D314B001D1B8A /* soundsystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE978224D3148001D1B8A /* soundsystem.cpp */; };
+		F21BE9BE224D314B001D1B8A /* wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE97A224D3148001D1B8A /* wall.cpp */; };
+		F21BE9BF224D314B001D1B8A /* route.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE97B224D3148001D1B8A /* route.cpp */; };
+		F21BE9C0224D314B001D1B8A /* trigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE97D224D3148001D1B8A /* trigger.cpp */; };
+		F21BE9C1224D314B001D1B8A /* directional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE97E224D3148001D1B8A /* directional.cpp */; };
+		F21BE9C2224D314B001D1B8A /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE982224D3149001D1B8A /* globals.cpp */; };
+		F21BE9C3224D314B001D1B8A /* callbutton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE984224D3149001D1B8A /* callbutton.cpp */; };
+		F21BE9C4224D314B001D1B8A /* scenenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE987224D3149001D1B8A /* scenenode.cpp */; };
+		F21BE9C5224D314B001D1B8A /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE989224D3149001D1B8A /* timer.cpp */; };
+		F21BE9C6224D314B001D1B8A /* unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE98A224D3149001D1B8A /* unix.cpp */; };
+		F21BE9C7224D314B001D1B8A /* profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE991224D314A001D1B8A /* profiler.cpp */; };
+		F21BE9C8224D314B001D1B8A /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE994224D314A001D1B8A /* manager.cpp */; };
+		F21BE9C9224D314B001D1B8A /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE996224D314A001D1B8A /* camera.cpp */; };
+		F21BE9CA224D314B001D1B8A /* dynamicmesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE998224D314A001D1B8A /* dynamicmesh.cpp */; };
+		F21BE9CB224D314B001D1B8A /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE999224D314A001D1B8A /* action.cpp */; };
+		F21BE9CC224D314B001D1B8A /* sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE99B224D314A001D1B8A /* sound.cpp */; };
+		F21BE9CD224D314B001D1B8A /* floorindicator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE99C224D314A001D1B8A /* floorindicator.cpp */; };
+		F21BE9CE224D314B001D1B8A /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE99D224D314A001D1B8A /* light.cpp */; };
+		F21BE9CF224D314B001D1B8A /* floor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE99E224D314A001D1B8A /* floor.cpp */; };
+		F21BE9D0224D314B001D1B8A /* elevatordoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9A0224D314B001D1B8A /* elevatordoor.cpp */; };
+		F21BE9D1224D314B001D1B8A /* sbs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9A1224D314B001D1B8A /* sbs.cpp */; };
+		F21BE9D2224D314B001D1B8A /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9A2224D314B001D1B8A /* texture.cpp */; };
+		F21BE9D3224D314B001D1B8A /* buttonpanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9A3224D314B001D1B8A /* buttonpanel.cpp */; };
+		F21BE9D4224D314B001D1B8A /* revolvingdoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9A6224D314B001D1B8A /* revolvingdoor.cpp */; };
+		F21BE9D5224D314B001D1B8A /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BE9AC224D314B001D1B8A /* object.cpp */; };
+		F21BEA47224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA3F224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.cpp */; };
+		F21BEA48224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA41224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.cpp */; };
+		F21BEA49224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA44224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.cpp */; };
+		F21BEA4A224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA45224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.cpp */; };
+		F21BEA66224D5AAF001D1B8A /* OgreBulletCollisionsTriangleShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA4B224D5AAD001D1B8A /* OgreBulletCollisionsTriangleShape.cpp */; };
+		F21BEA67224D5AAF001D1B8A /* OgreBulletCollisionsGImpactShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA4C224D5AAD001D1B8A /* OgreBulletCollisionsGImpactShape.cpp */; };
+		F21BEA68224D5AAF001D1B8A /* OgreBulletCollisionsStaticPlaneShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA4E224D5AAE001D1B8A /* OgreBulletCollisionsStaticPlaneShape.cpp */; };
+		F21BEA69224D5AAF001D1B8A /* OgreBulletCollisionsCylinderShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA51224D5AAE001D1B8A /* OgreBulletCollisionsCylinderShape.cpp */; };
+		F21BEA6A224D5AAF001D1B8A /* OgreBulletCollisionsConeShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA53224D5AAE001D1B8A /* OgreBulletCollisionsConeShape.cpp */; };
+		F21BEA6B224D5AAF001D1B8A /* OgreBulletCollisionsCompoundShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA54224D5AAE001D1B8A /* OgreBulletCollisionsCompoundShape.cpp */; };
+		F21BEA6C224D5AAF001D1B8A /* OgreBulletCollisionsTrimeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA56224D5AAE001D1B8A /* OgreBulletCollisionsTrimeshShape.cpp */; };
+		F21BEA6D224D5AAF001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA57224D5AAE001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.cpp */; };
+		F21BEA6E224D5AAF001D1B8A /* OgreBulletCollisionsSphereShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA59224D5AAE001D1B8A /* OgreBulletCollisionsSphereShape.cpp */; };
+		F21BEA6F224D5AAF001D1B8A /* OgreBulletCollisionsCapsuleShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA5B224D5AAE001D1B8A /* OgreBulletCollisionsCapsuleShape.cpp */; };
+		F21BEA70224D5AAF001D1B8A /* OgreBulletCollisionsMultiSphereShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA5E224D5AAE001D1B8A /* OgreBulletCollisionsMultiSphereShape.cpp */; };
+		F21BEA71224D5AAF001D1B8A /* OgreBulletCollisionsConvexHullShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA5F224D5AAE001D1B8A /* OgreBulletCollisionsConvexHullShape.cpp */; };
+		F21BEA72224D5AAF001D1B8A /* OgreBulletCollisionsBoxShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA61224D5AAE001D1B8A /* OgreBulletCollisionsBoxShape.cpp */; };
+		F21BEA76224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA75224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.cpp */; };
+		F21BEA84224D5AF3001D1B8A /* OgreBulletCollisionsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA7A224D5AF3001D1B8A /* OgreBulletCollisionsObject.cpp */; };
+		F21BEA85224D5AF3001D1B8A /* OgreBulletCollisionsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA7C224D5AF3001D1B8A /* OgreBulletCollisionsWorld.cpp */; };
+		F21BEA86224D5AF3001D1B8A /* OgreBulletCollisionsPrecompiled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA7D224D5AF3001D1B8A /* OgreBulletCollisionsPrecompiled.cpp */; };
+		F21BEA87224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA7F224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.cpp */; };
+		F21BEA88224D5AF3001D1B8A /* OgreBulletCollisionsShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA82224D5AF3001D1B8A /* OgreBulletCollisionsShape.cpp */; };
+		F21BEA89224D5AF3001D1B8A /* OgreBulletCollisionsRay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA83224D5AF3001D1B8A /* OgreBulletCollisionsRay.cpp */; };
+		F21BEA96224D5B4D001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA8C224D5B4C001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.cpp */; };
+		F21BEA97224D5B4D001D1B8A /* OgreBulletDynamics6DofConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA8D224D5B4C001D1B8A /* OgreBulletDynamics6DofConstraint.cpp */; };
+		F21BEA98224D5B4D001D1B8A /* OgreBulletDynamicsHingeConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA8E224D5B4C001D1B8A /* OgreBulletDynamicsHingeConstraint.cpp */; };
+		F21BEA99224D5B4D001D1B8A /* OgreBulletDynamicsConeTwistConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA90224D5B4C001D1B8A /* OgreBulletDynamicsConeTwistConstraint.cpp */; };
+		F21BEA9A224D5B4D001D1B8A /* OgreBulletDynamicsRaycastVehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA93224D5B4C001D1B8A /* OgreBulletDynamicsRaycastVehicle.cpp */; };
+		F21BEA9D224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEA9B224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.cpp */; };
+		F21BEAAB224D5B7A001D1B8A /* OgreBulletDynamicsRigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA1224D5B79001D1B8A /* OgreBulletDynamicsRigidBody.cpp */; };
+		F21BEAAC224D5B7A001D1B8A /* OgreBulletDynamicsObjectState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA3224D5B79001D1B8A /* OgreBulletDynamicsObjectState.cpp */; };
+		F21BEAAD224D5B7A001D1B8A /* OgreBulletDynamicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA4224D5B79001D1B8A /* OgreBulletDynamicsWorld.cpp */; };
+		F21BEAAE224D5B7A001D1B8A /* OgreBulletDynamicsCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA6224D5B79001D1B8A /* OgreBulletDynamicsCharacter.cpp */; };
+		F21BEAAF224D5B7A001D1B8A /* OgreBulletDynamicsPrecompiled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA7224D5B79001D1B8A /* OgreBulletDynamicsPrecompiled.cpp */; };
+		F21BEAB0224D5B7A001D1B8A /* OgreBulletDynamicsConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEAA9224D5B79001D1B8A /* OgreBulletDynamicsConstraint.cpp */; };
+		F21BEB82224D6361001D1B8A /* libBulletCollision_xcode4_x64_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB80224D6361001D1B8A /* libBulletCollision_xcode4_x64_release.a */; };
+		F21BEB83224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB81224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a */; };
+		F21BEB85224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB84224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a */; };
+		F21BEB87224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB86224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a */; };
+		F21BEB89224D6520001D1B8A /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB88224D651F001D1B8A /* libfmod.dylib */; };
+		F21BEB8B224D6AB3001D1B8A /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB8A224D6AB2001D1B8A /* Ogre.framework */; };
+		F21BEB8D224D6B9D001D1B8A /* OgreOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB8C224D6B9D001D1B8A /* OgreOverlay.framework */; };
+		F21BEB90224D6C19001D1B8A /* libfmod.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB88224D651F001D1B8A /* libfmod.dylib */; };
+		F21BEB91224D6C66001D1B8A /* Ogre.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB8A224D6AB2001D1B8A /* Ogre.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F21BEB92224D6C66001D1B8A /* OgreOverlay.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB8C224D6B9D001D1B8A /* OgreOverlay.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F21BEB9A224D6ED4001D1B8A /* libzzip.13.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEB98224D6EBD001D1B8A /* libzzip.13.dylib */; };
+		F21BEBD3224D6F1B001D1B8A /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEB9B224D6F17001D1B8A /* stats.cpp */; };
+		F21BEBD4224D6F1B001D1B8A /* skycontrol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEB9E224D6F17001D1B8A /* skycontrol.cpp */; };
+		F21BEBD5224D6F1B001D1B8A /* stackwalker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEB9F224D6F17001D1B8A /* stackwalker.cpp */; };
+		F21BEBD6224D6F1B001D1B8A /* textwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA1224D6F17001D1B8A /* textwindow.cpp */; };
+		F21BEBD7224D6F1B001D1B8A /* skyscraper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA2224D6F18001D1B8A /* skyscraper.cpp */; };
+		F21BEBD8224D6F1B001D1B8A /* cameracontrol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA3224D6F18001D1B8A /* cameracontrol.cpp */; };
+		F21BEBD9224D6F1B001D1B8A /* moveobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA6224D6F18001D1B8A /* moveobject.cpp */; };
+		F21BEBDA224D6F1B001D1B8A /* console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA7224D6F18001D1B8A /* console.cpp */; };
+		F21BEBDB224D6F1B001D1B8A /* actionviewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBA8224D6F18001D1B8A /* actionviewer.cpp */; };
+		F21BEBDC224D6F1B001D1B8A /* script_buildings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBAB224D6F18001D1B8A /* script_buildings.cpp */; };
+		F21BEBDD224D6F1B001D1B8A /* script_floors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBAC224D6F18001D1B8A /* script_floors.cpp */; };
+		F21BEBDE224D6F1B001D1B8A /* editelevator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBAD224D6F18001D1B8A /* editelevator.cpp */; };
+		F21BEBDF224D6F1B001D1B8A /* script_elevators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBAF224D6F18001D1B8A /* script_elevators.cpp */; };
+		F21BEBE0224D6F1B001D1B8A /* enginemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBB0224D6F18001D1B8A /* enginemanager.cpp */; };
+		F21BEBE1224D6F1B001D1B8A /* script_commands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBB1224D6F18001D1B8A /* script_commands.cpp */; };
+		F21BEBE2224D6F1B001D1B8A /* loaddialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBB2224D6F18001D1B8A /* loaddialog.cpp */; };
+		F21BEBE3224D6F1B001D1B8A /* keydialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBB4224D6F19001D1B8A /* keydialog.cpp */; };
+		F21BEBE4224D6F1B001D1B8A /* objectinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBB7224D6F19001D1B8A /* objectinfo.cpp */; };
+		F21BEBE5224D6F1B001D1B8A /* meshcontrol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBBA224D6F19001D1B8A /* meshcontrol.cpp */; };
+		F21BEBE6224D6F1B001D1B8A /* createobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBBC224D6F19001D1B8A /* createobject.cpp */; };
+		F21BEBE7224D6F1B001D1B8A /* parameterviewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBBE224D6F19001D1B8A /* parameterviewer.cpp */; };
+		F21BEBE8224D6F1B001D1B8A /* script_globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBBF224D6F19001D1B8A /* script_globals.cpp */; };
+		F21BEBE9224D6F1B001D1B8A /* peoplemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC3224D6F1A001D1B8A /* peoplemanager.cpp */; };
+		F21BEBEA224D6F1B001D1B8A /* mainscreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC4224D6F1A001D1B8A /* mainscreen.cpp */; };
+		F21BEBEB224D6F1B001D1B8A /* script_elevatorcars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC5224D6F1A001D1B8A /* script_elevatorcars.cpp */; };
+		F21BEBEC224D6F1B001D1B8A /* script_section.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC7224D6F1A001D1B8A /* script_section.cpp */; };
+		F21BEBED224D6F1B001D1B8A /* scriptprocessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC8224D6F1A001D1B8A /* scriptprocessor.cpp */; };
+		F21BEBEE224D6F1B001D1B8A /* profilergui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBC9224D6F1A001D1B8A /* profilergui.cpp */; };
+		F21BEBEF224D6F1B001D1B8A /* enginecontext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBCA224D6F1A001D1B8A /* enginecontext.cpp */; };
+		F21BEBF0224D6F1B001D1B8A /* script_textures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBCD224D6F1B001D1B8A /* script_textures.cpp */; };
+		F21BEBF1224D6F1B001D1B8A /* debugpanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21BEBCE224D6F1B001D1B8A /* debugpanel.cpp */; };
+		F21BEC07224D8EAD001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF2224D8EAB001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib */; };
+		F21BEC08224D8EAD001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF3224D8EAB001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib */; };
+		F21BEC09224D8EAD001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF4224D8EAB001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib */; };
+		F21BEC0A224D8EAD001D1B8A /* libwxregexu-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF5224D8EAB001D1B8A /* libwxregexu-3.1.a */; };
+		F21BEC0B224D8EAD001D1B8A /* libwxscintilla-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF6224D8EAB001D1B8A /* libwxscintilla-3.1.a */; };
+		F21BEC0C224D8EAD001D1B8A /* libwxtiff-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF7224D8EAB001D1B8A /* libwxtiff-3.1.a */; };
+		F21BEC0D224D8EAD001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF8224D8EAB001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib */; };
+		F21BEC0E224D8EAD001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF9224D8EAB001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib */; };
+		F21BEC0F224D8EAD001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFA224D8EAC001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib */; };
+		F21BEC10224D8EAD001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFB224D8EAC001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib */; };
+		F21BEC11224D8EAD001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFC224D8EAC001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib */; };
+		F21BEC12224D8EAD001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFD224D8EAC001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib */; };
+		F21BEC13224D8EAD001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFE224D8EAC001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib */; };
+		F21BEC14224D8EAD001D1B8A /* libwxpng-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFF224D8EAC001D1B8A /* libwxpng-3.1.a */; };
+		F21BEC15224D8EAD001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC00224D8EAC001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib */; };
+		F21BEC16224D8EAD001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC01224D8EAC001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib */; };
+		F21BEC17224D8EAD001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC02224D8EAC001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib */; };
+		F21BEC18224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC03224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib */; };
+		F21BEC19224D8EAD001D1B8A /* libwxjpeg-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC04224D8EAD001D1B8A /* libwxjpeg-3.1.a */; };
+		F21BEC1A224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC05224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib */; };
+		F21BEC1B224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC06224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib */; };
+		F21BEC65224D9168001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC03224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib */; };
+		F21BEC66224D9169001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFD224D8EAC001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib */; };
+		F21BEC67224D9169001D1B8A /* libwx_baseu-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC05224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib */; };
+		F21BEC68224D9169001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC02224D8EAC001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib */; };
+		F21BEC69224D9169001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFE224D8EAC001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib */; };
+		F21BEC6A224D9169001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC01224D8EAC001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib */; };
+		F21BEC6B224D9169001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFB224D8EAC001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib */; };
+		F21BEC6C224D9169001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF3224D8EAB001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib */; };
+		F21BEC6D224D9169001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF2224D8EAB001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib */; };
+		F21BEC6E224D9169001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFA224D8EAC001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib */; };
+		F21BEC6F224D9169001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF4224D8EAB001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib */; };
+		F21BEC70224D9169001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC06224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib */; };
+		F21BEC71224D9169001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFC224D8EAC001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib */; };
+		F21BEC72224D9169001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC00224D8EAC001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib */; };
+		F21BEC73224D9169001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF8224D8EAB001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib */; };
+		F21BEC74224D9169001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF9224D8EAB001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib */; };
+		F263572F224FC5DB00CAEEE1 /* skyscraper.ini in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572E224FC5BC00CAEEE1 /* skyscraper.ini */; };
+		F2635730224FC5DB00CAEEE1 /* ogre.cfg in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572D224FC5AB00CAEEE1 /* ogre.cfg */; };
+		F2635731224FC5DB00CAEEE1 /* plugins.cfg in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572C224FC5AA00CAEEE1 /* plugins.cfg */; };
+		F2635B7D224FC63500CAEEE1 /* data in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F2635B7C224FC62A00CAEEE1 /* data */; };
+		F2635B7F224FC6C100CAEEE1 /* Cg.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2635B7E224FC69500CAEEE1 /* Cg.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2635B81224FC8BB00CAEEE1 /* resources.cfg in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F2635B80224FC89F00CAEEE1 /* resources.cfg */; };
+		F2635B83224FC90700CAEEE1 /* buildings in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F2635B82224FC8DB00CAEEE1 /* buildings */; };
+		F2635BB5224FE56B00CAEEE1 /* Sun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B84224FE56800CAEEE1 /* Sun.cpp */; };
+		F2635BB6224FE56B00CAEEE1 /* InternalUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B86224FE56800CAEEE1 /* InternalUtilities.cpp */; };
+		F2635BB7224FE56B00CAEEE1 /* Moon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B87224FE56800CAEEE1 /* Moon.cpp */; };
+		F2635BB8224FE56B00CAEEE1 /* CaelumScriptTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B8A224FE56900CAEEE1 /* CaelumScriptTranslator.cpp */; };
+		F2635BB9224FE56B00CAEEE1 /* FlatCloudLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B8E224FE56900CAEEE1 /* FlatCloudLayer.cpp */; };
+		F2635BBA224FE56B00CAEEE1 /* PointStarfield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B8F224FE56900CAEEE1 /* PointStarfield.cpp */; };
+		F2635BBB224FE56B00CAEEE1 /* FastGpuParamRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B92224FE56900CAEEE1 /* FastGpuParamRef.cpp */; };
+		F2635BBC224FE56B00CAEEE1 /* TypeDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B93224FE56900CAEEE1 /* TypeDescriptor.cpp */; };
+		F2635BBD224FE56B00CAEEE1 /* CameraBoundElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B96224FE56900CAEEE1 /* CameraBoundElement.cpp */; };
+		F2635BBE224FE56B00CAEEE1 /* BrightStarCatalogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B99224FE56900CAEEE1 /* BrightStarCatalogue.cpp */; };
+		F2635BBF224FE56B00CAEEE1 /* ImageStarfield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B9A224FE56900CAEEE1 /* ImageStarfield.cpp */; };
+		F2635BC0224FE56B00CAEEE1 /* CaelumPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B9E224FE56A00CAEEE1 /* CaelumPlugin.cpp */; };
+		F2635BC1224FE56B00CAEEE1 /* GroundFog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635B9F224FE56A00CAEEE1 /* GroundFog.cpp */; };
+		F2635BC2224FE56B00CAEEE1 /* UniversalClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BA2224FE56A00CAEEE1 /* UniversalClock.cpp */; };
+		F2635BC3224FE56B00CAEEE1 /* CaelumSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BA3224FE56A00CAEEE1 /* CaelumSystem.cpp */; };
+		F2635BC4224FE56B00CAEEE1 /* CaelumPrecompiled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BA5224FE56A00CAEEE1 /* CaelumPrecompiled.cpp */; };
+		F2635BC5224FE56B00CAEEE1 /* CloudSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BA6224FE56A00CAEEE1 /* CloudSystem.cpp */; };
+		F2635BC6224FE56B00CAEEE1 /* PrecipitationController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BA9224FE56A00CAEEE1 /* PrecipitationController.cpp */; };
+		F2635BC7224FE56B00CAEEE1 /* CaelumDefaultTypeDescriptorData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BAB224FE56B00CAEEE1 /* CaelumDefaultTypeDescriptorData.cpp */; };
+		F2635BC8224FE56B00CAEEE1 /* DepthComposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BAC224FE56B00CAEEE1 /* DepthComposer.cpp */; };
+		F2635BC9224FE56B00CAEEE1 /* SkyLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB0224FE56B00CAEEE1 /* SkyLight.cpp */; };
+		F2635BCA224FE56B00CAEEE1 /* Astronomy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB2224FE56B00CAEEE1 /* Astronomy.cpp */; };
+		F2635BCB224FE56B00CAEEE1 /* SkyDome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2635BB3224FE56B00CAEEE1 /* SkyDome.cpp */; };
+		F2AE7C18224E857E00603D42 /* RenderSystem_GL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C12224E653700603D42 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2AE7C1A224E863C00603D42 /* Plugin_OctreeSceneManager.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C19224E861E00603D42 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2AE7C1E224EB44F00603D42 /* Codec_FreeImage.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C1B224EB0CE00603D42 /* Codec_FreeImage.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2AE7C22224EC18500603D42 /* Plugin_CgProgramManager.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F2AE7C21224EC17600603D42 /* Plugin_CgProgramManager.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F21BEB8F224D6C05001D1B8A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2635B7F224FC6C100CAEEE1 /* Cg.framework in Copy Frameworks */,
+				F2AE7C22224EC18500603D42 /* Plugin_CgProgramManager.framework in Copy Frameworks */,
+				F2AE7C1E224EB44F00603D42 /* Codec_FreeImage.framework in Copy Frameworks */,
+				F2AE7C1A224E863C00603D42 /* Plugin_OctreeSceneManager.framework in Copy Frameworks */,
+				F2AE7C18224E857E00603D42 /* RenderSystem_GL.framework in Copy Frameworks */,
+				F21BEC65224D9168001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC66224D9169001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC67224D9169001D1B8A /* libwx_baseu-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC68224D9169001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC69224D9169001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6A224D9169001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6B224D9169001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6C224D9169001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6D224D9169001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6E224D9169001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC6F224D9169001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC70224D9169001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC71224D9169001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC72224D9169001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC73224D9169001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEC74224D9169001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib in Copy Frameworks */,
+				F21BEB9A224D6ED4001D1B8A /* libzzip.13.dylib in Copy Frameworks */,
+				F21BEB91224D6C66001D1B8A /* Ogre.framework in Copy Frameworks */,
+				F21BEB92224D6C66001D1B8A /* OgreOverlay.framework in Copy Frameworks */,
+				F21BEB90224D6C19001D1B8A /* libfmod.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F263572B224FC57800CAEEE1 /* Copy Configuration & Data */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F2635B83224FC90700CAEEE1 /* buildings in Copy Configuration & Data */,
+				F2635B81224FC8BB00CAEEE1 /* resources.cfg in Copy Configuration & Data */,
+				F2635B7D224FC63500CAEEE1 /* data in Copy Configuration & Data */,
+				F263572F224FC5DB00CAEEE1 /* skyscraper.ini in Copy Configuration & Data */,
+				F2635730224FC5DB00CAEEE1 /* ogre.cfg in Copy Configuration & Data */,
+				F2635731224FC5DB00CAEEE1 /* plugins.cfg in Copy Configuration & Data */,
+			);
+			name = "Copy Configuration & Data";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F21BE941224D2F31001D1B8A /* Skyscraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyscraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21BE947224D2F34001D1B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F21BE94C224D2F34001D1B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21BE94F224D2F34001D1B8A /* Skyscraper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Skyscraper.entitlements; sourceTree = "<group>"; };
+		F21BE95B224D3147001D1B8A /* buttonpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buttonpanel.h; path = ../../src/sbs/buttonpanel.h; sourceTree = "<group>"; };
+		F21BE95C224D3147001D1B8A /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = model.cpp; path = ../../src/sbs/model.cpp; sourceTree = "<group>"; };
+		F21BE95D224D3147001D1B8A /* escalator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = escalator.h; path = ../../src/sbs/escalator.h; sourceTree = "<group>"; };
+		F21BE95E224D3147001D1B8A /* door.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = door.cpp; path = ../../src/sbs/door.cpp; sourceTree = "<group>"; };
+		F21BE95F224D3147001D1B8A /* movingwalkway.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = movingwalkway.cpp; path = ../../src/sbs/movingwalkway.cpp; sourceTree = "<group>"; };
+		F21BE960224D3147001D1B8A /* stairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stairs.cpp; path = ../../src/sbs/stairs.cpp; sourceTree = "<group>"; };
+		F21BE961224D3147001D1B8A /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = ../../src/sbs/texture.h; sourceTree = "<group>"; };
+		F21BE962224D3147001D1B8A /* elevator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = elevator.cpp; path = ../../src/sbs/elevator.cpp; sourceTree = "<group>"; };
+		F21BE963224D3147001D1B8A /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = ../../src/sbs/camera.h; sourceTree = "<group>"; };
+		F21BE964224D3147001D1B8A /* shaft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shaft.cpp; path = ../../src/sbs/shaft.cpp; sourceTree = "<group>"; };
+		F21BE965224D3147001D1B8A /* person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = person.cpp; path = ../../src/sbs/person.cpp; sourceTree = "<group>"; };
+		F21BE966224D3147001D1B8A /* texmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texmap.cpp; path = ../../src/sbs/texmap.cpp; sourceTree = "<group>"; };
+		F21BE967224D3147001D1B8A /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random.cpp; path = ../../src/sbs/random.cpp; sourceTree = "<group>"; };
+		F21BE968224D3147001D1B8A /* sbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sbs.h; path = ../../src/sbs/sbs.h; sourceTree = "<group>"; };
+		F21BE969224D3147001D1B8A /* step.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = step.cpp; path = ../../src/sbs/step.cpp; sourceTree = "<group>"; };
+		F21BE96A224D3147001D1B8A /* escalator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = escalator.cpp; path = ../../src/sbs/escalator.cpp; sourceTree = "<group>"; };
+		F21BE96B224D3147001D1B8A /* elevator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elevator.h; path = ../../src/sbs/elevator.h; sourceTree = "<group>"; };
+		F21BE96C224D3147001D1B8A /* movingwalkway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = movingwalkway.h; path = ../../src/sbs/movingwalkway.h; sourceTree = "<group>"; };
+		F21BE96D224D3147001D1B8A /* elevatorcar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = elevatorcar.cpp; path = ../../src/sbs/elevatorcar.cpp; sourceTree = "<group>"; };
+		F21BE96E224D3147001D1B8A /* step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = step.h; path = ../../src/sbs/step.h; sourceTree = "<group>"; };
+		F21BE96F224D3148001D1B8A /* polygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polygon.cpp; path = ../../src/sbs/polygon.cpp; sourceTree = "<group>"; };
+		F21BE970224D3148001D1B8A /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = globals.h; path = ../../src/sbs/globals.h; sourceTree = "<group>"; };
+		F21BE971224D3148001D1B8A /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mesh.cpp; path = ../../src/sbs/mesh.cpp; sourceTree = "<group>"; };
+		F21BE972224D3148001D1B8A /* control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = control.cpp; path = ../../src/sbs/control.cpp; sourceTree = "<group>"; };
+		F21BE973224D3148001D1B8A /* action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action.h; path = ../../src/sbs/action.h; sourceTree = "<group>"; };
+		F21BE974224D3148001D1B8A /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../../src/sbs/mesh.h; sourceTree = "<group>"; };
+		F21BE975224D3148001D1B8A /* control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = control.h; path = ../../src/sbs/control.h; sourceTree = "<group>"; };
+		F21BE976224D3148001D1B8A /* cameratexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cameratexture.cpp; path = ../../src/sbs/cameratexture.cpp; sourceTree = "<group>"; };
+		F21BE977224D3148001D1B8A /* scenenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scenenode.h; path = ../../src/sbs/scenenode.h; sourceTree = "<group>"; };
+		F21BE978224D3148001D1B8A /* soundsystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soundsystem.cpp; path = ../../src/sbs/soundsystem.cpp; sourceTree = "<group>"; };
+		F21BE979224D3148001D1B8A /* profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = profiler.h; path = ../../src/sbs/profiler.h; sourceTree = "<group>"; };
+		F21BE97A224D3148001D1B8A /* wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wall.cpp; path = ../../src/sbs/wall.cpp; sourceTree = "<group>"; };
+		F21BE97B224D3148001D1B8A /* route.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = route.cpp; path = ../../src/sbs/route.cpp; sourceTree = "<group>"; };
+		F21BE97C224D3148001D1B8A /* soundsystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundsystem.h; path = ../../src/sbs/soundsystem.h; sourceTree = "<group>"; };
+		F21BE97D224D3148001D1B8A /* trigger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = trigger.cpp; path = ../../src/sbs/trigger.cpp; sourceTree = "<group>"; };
+		F21BE97E224D3148001D1B8A /* directional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = directional.cpp; path = ../../src/sbs/directional.cpp; sourceTree = "<group>"; };
+		F21BE97F224D3148001D1B8A /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = ../../src/sbs/object.h; sourceTree = "<group>"; };
+		F21BE980224D3149001D1B8A /* door.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = door.h; path = ../../src/sbs/door.h; sourceTree = "<group>"; };
+		F21BE981224D3149001D1B8A /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = model.h; path = ../../src/sbs/model.h; sourceTree = "<group>"; };
+		F21BE982224D3149001D1B8A /* globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = globals.cpp; path = ../../src/sbs/globals.cpp; sourceTree = "<group>"; };
+		F21BE983224D3149001D1B8A /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light.h; path = ../../src/sbs/light.h; sourceTree = "<group>"; };
+		F21BE984224D3149001D1B8A /* callbutton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = callbutton.cpp; path = ../../src/sbs/callbutton.cpp; sourceTree = "<group>"; };
+		F21BE985224D3149001D1B8A /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../../src/sbs/manager.h; sourceTree = "<group>"; };
+		F21BE986224D3149001D1B8A /* floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = floor.h; path = ../../src/sbs/floor.h; sourceTree = "<group>"; };
+		F21BE987224D3149001D1B8A /* scenenode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scenenode.cpp; path = ../../src/sbs/scenenode.cpp; sourceTree = "<group>"; };
+		F21BE988224D3149001D1B8A /* directional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = directional.h; path = ../../src/sbs/directional.h; sourceTree = "<group>"; };
+		F21BE989224D3149001D1B8A /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timer.cpp; path = ../../src/sbs/timer.cpp; sourceTree = "<group>"; };
+		F21BE98A224D3149001D1B8A /* unix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unix.cpp; path = ../../src/sbs/unix.cpp; sourceTree = "<group>"; };
+		F21BE98B224D3149001D1B8A /* shaft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shaft.h; path = ../../src/sbs/shaft.h; sourceTree = "<group>"; };
+		F21BE98C224D3149001D1B8A /* polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polygon.h; path = ../../src/sbs/polygon.h; sourceTree = "<group>"; };
+		F21BE98D224D3149001D1B8A /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random.h; path = ../../src/sbs/random.h; sourceTree = "<group>"; };
+		F21BE98E224D3149001D1B8A /* revolvingdoor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = revolvingdoor.h; path = ../../src/sbs/revolvingdoor.h; sourceTree = "<group>"; };
+		F21BE98F224D314A001D1B8A /* trigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trigger.h; path = ../../src/sbs/trigger.h; sourceTree = "<group>"; };
+		F21BE990224D314A001D1B8A /* elevatordoor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elevatordoor.h; path = ../../src/sbs/elevatordoor.h; sourceTree = "<group>"; };
+		F21BE991224D314A001D1B8A /* profiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = profiler.cpp; path = ../../src/sbs/profiler.cpp; sourceTree = "<group>"; };
+		F21BE992224D314A001D1B8A /* floorindicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = floorindicator.h; path = ../../src/sbs/floorindicator.h; sourceTree = "<group>"; };
+		F21BE993224D314A001D1B8A /* wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wall.h; path = ../../src/sbs/wall.h; sourceTree = "<group>"; };
+		F21BE994224D314A001D1B8A /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../../src/sbs/manager.cpp; sourceTree = "<group>"; };
+		F21BE995224D314A001D1B8A /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = triangle.h; path = ../../src/sbs/triangle.h; sourceTree = "<group>"; };
+		F21BE996224D314A001D1B8A /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera.cpp; path = ../../src/sbs/camera.cpp; sourceTree = "<group>"; };
+		F21BE997224D314A001D1B8A /* dynamicmesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamicmesh.h; path = ../../src/sbs/dynamicmesh.h; sourceTree = "<group>"; };
+		F21BE998224D314A001D1B8A /* dynamicmesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamicmesh.cpp; path = ../../src/sbs/dynamicmesh.cpp; sourceTree = "<group>"; };
+		F21BE999224D314A001D1B8A /* action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = action.cpp; path = ../../src/sbs/action.cpp; sourceTree = "<group>"; };
+		F21BE99A224D314A001D1B8A /* sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sound.h; path = ../../src/sbs/sound.h; sourceTree = "<group>"; };
+		F21BE99B224D314A001D1B8A /* sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sound.cpp; path = ../../src/sbs/sound.cpp; sourceTree = "<group>"; };
+		F21BE99C224D314A001D1B8A /* floorindicator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = floorindicator.cpp; path = ../../src/sbs/floorindicator.cpp; sourceTree = "<group>"; };
+		F21BE99D224D314A001D1B8A /* light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light.cpp; path = ../../src/sbs/light.cpp; sourceTree = "<group>"; };
+		F21BE99E224D314A001D1B8A /* floor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = floor.cpp; path = ../../src/sbs/floor.cpp; sourceTree = "<group>"; };
+		F21BE99F224D314B001D1B8A /* cameratexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cameratexture.h; path = ../../src/sbs/cameratexture.h; sourceTree = "<group>"; };
+		F21BE9A0224D314B001D1B8A /* elevatordoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = elevatordoor.cpp; path = ../../src/sbs/elevatordoor.cpp; sourceTree = "<group>"; };
+		F21BE9A1224D314B001D1B8A /* sbs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sbs.cpp; path = ../../src/sbs/sbs.cpp; sourceTree = "<group>"; };
+		F21BE9A2224D314B001D1B8A /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../src/sbs/texture.cpp; sourceTree = "<group>"; };
+		F21BE9A3224D314B001D1B8A /* buttonpanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = buttonpanel.cpp; path = ../../src/sbs/buttonpanel.cpp; sourceTree = "<group>"; };
+		F21BE9A4224D314B001D1B8A /* stairs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stairs.h; path = ../../src/sbs/stairs.h; sourceTree = "<group>"; };
+		F21BE9A5224D314B001D1B8A /* elevatorcar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elevatorcar.h; path = ../../src/sbs/elevatorcar.h; sourceTree = "<group>"; };
+		F21BE9A6224D314B001D1B8A /* revolvingdoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = revolvingdoor.cpp; path = ../../src/sbs/revolvingdoor.cpp; sourceTree = "<group>"; };
+		F21BE9A7224D314B001D1B8A /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = person.h; path = ../../src/sbs/person.h; sourceTree = "<group>"; };
+		F21BE9A8224D314B001D1B8A /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = route.h; path = ../../src/sbs/route.h; sourceTree = "<group>"; };
+		F21BE9A9224D314B001D1B8A /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timer.h; path = ../../src/sbs/timer.h; sourceTree = "<group>"; };
+		F21BE9AA224D314B001D1B8A /* unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unix.h; path = ../../src/sbs/unix.h; sourceTree = "<group>"; };
+		F21BE9AB224D314B001D1B8A /* callbutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = callbutton.h; path = ../../src/sbs/callbutton.h; sourceTree = "<group>"; };
+		F21BE9AC224D314B001D1B8A /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object.cpp; path = ../../src/sbs/object.cpp; sourceTree = "<group>"; };
+		F21BEA3F224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsDebugDrawer.cpp; path = ../../ogrebullet/Collisions/src/Debug/OgreBulletCollisionsDebugDrawer.cpp; sourceTree = "<group>"; };
+		F21BEA40224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsDebugContact.h; path = ../../ogrebullet/Collisions/include/Debug/OgreBulletCollisionsDebugContact.h; sourceTree = "<group>"; };
+		F21BEA41224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsDebugLines.cpp; path = ../../ogrebullet/Collisions/src/Debug/OgreBulletCollisionsDebugLines.cpp; sourceTree = "<group>"; };
+		F21BEA42224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsDebugDrawer.h; path = ../../ogrebullet/Collisions/include/Debug/OgreBulletCollisionsDebugDrawer.h; sourceTree = "<group>"; };
+		F21BEA43224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsDebugLines.h; path = ../../ogrebullet/Collisions/include/Debug/OgreBulletCollisionsDebugLines.h; sourceTree = "<group>"; };
+		F21BEA44224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsDebugShape.cpp; path = ../../ogrebullet/Collisions/src/Debug/OgreBulletCollisionsDebugShape.cpp; sourceTree = "<group>"; };
+		F21BEA45224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsDebugContact.cpp; path = ../../ogrebullet/Collisions/src/Debug/OgreBulletCollisionsDebugContact.cpp; sourceTree = "<group>"; };
+		F21BEA46224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsDebugShape.h; path = ../../ogrebullet/Collisions/include/Debug/OgreBulletCollisionsDebugShape.h; sourceTree = "<group>"; };
+		F21BEA4B224D5AAD001D1B8A /* OgreBulletCollisionsTriangleShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsTriangleShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsTriangleShape.cpp; sourceTree = "<group>"; };
+		F21BEA4C224D5AAD001D1B8A /* OgreBulletCollisionsGImpactShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsGImpactShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsGImpactShape.cpp; sourceTree = "<group>"; };
+		F21BEA4D224D5AAD001D1B8A /* OgreBulletCollisionsSphereShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsSphereShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsSphereShape.h; sourceTree = "<group>"; };
+		F21BEA4E224D5AAE001D1B8A /* OgreBulletCollisionsStaticPlaneShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsStaticPlaneShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp; sourceTree = "<group>"; };
+		F21BEA4F224D5AAE001D1B8A /* OgreBulletCollisionsCylinderShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsCylinderShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsCylinderShape.h; sourceTree = "<group>"; };
+		F21BEA50224D5AAE001D1B8A /* OgreBulletCollisionsTerrainShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsTerrainShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsTerrainShape.h; sourceTree = "<group>"; };
+		F21BEA51224D5AAE001D1B8A /* OgreBulletCollisionsCylinderShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsCylinderShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsCylinderShape.cpp; sourceTree = "<group>"; };
+		F21BEA52224D5AAE001D1B8A /* OgreBulletCollisionsGImpactShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsGImpactShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsGImpactShape.h; sourceTree = "<group>"; };
+		F21BEA53224D5AAE001D1B8A /* OgreBulletCollisionsConeShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsConeShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsConeShape.cpp; sourceTree = "<group>"; };
+		F21BEA54224D5AAE001D1B8A /* OgreBulletCollisionsCompoundShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsCompoundShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsCompoundShape.cpp; sourceTree = "<group>"; };
+		F21BEA55224D5AAE001D1B8A /* OgreBulletCollisionsConvexHullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsConvexHullShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsConvexHullShape.h; sourceTree = "<group>"; };
+		F21BEA56224D5AAE001D1B8A /* OgreBulletCollisionsTrimeshShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsTrimeshShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsTrimeshShape.cpp; sourceTree = "<group>"; };
+		F21BEA57224D5AAE001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsMinkowskiSumShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp; sourceTree = "<group>"; };
+		F21BEA58224D5AAE001D1B8A /* OgreBulletCollisionsTrimeshShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsTrimeshShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsTrimeshShape.h; sourceTree = "<group>"; };
+		F21BEA59224D5AAE001D1B8A /* OgreBulletCollisionsSphereShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsSphereShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsSphereShape.cpp; sourceTree = "<group>"; };
+		F21BEA5A224D5AAE001D1B8A /* OgreBulletCollisionsMultiSphereShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsMultiSphereShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsMultiSphereShape.h; sourceTree = "<group>"; };
+		F21BEA5B224D5AAE001D1B8A /* OgreBulletCollisionsCapsuleShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsCapsuleShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsCapsuleShape.cpp; sourceTree = "<group>"; };
+		F21BEA5C224D5AAE001D1B8A /* OgreBulletCollisionsBoxShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsBoxShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsBoxShape.h; sourceTree = "<group>"; };
+		F21BEA5D224D5AAE001D1B8A /* OgreBulletCollisionsCompoundShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsCompoundShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsCompoundShape.h; sourceTree = "<group>"; };
+		F21BEA5E224D5AAE001D1B8A /* OgreBulletCollisionsMultiSphereShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsMultiSphereShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsMultiSphereShape.cpp; sourceTree = "<group>"; };
+		F21BEA5F224D5AAE001D1B8A /* OgreBulletCollisionsConvexHullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsConvexHullShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsConvexHullShape.cpp; sourceTree = "<group>"; };
+		F21BEA60224D5AAE001D1B8A /* OgreBulletCollisionsConeShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsConeShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsConeShape.h; sourceTree = "<group>"; };
+		F21BEA61224D5AAE001D1B8A /* OgreBulletCollisionsBoxShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsBoxShape.cpp; path = ../../ogrebullet/Collisions/src/Shapes/OgreBulletCollisionsBoxShape.cpp; sourceTree = "<group>"; };
+		F21BEA62224D5AAE001D1B8A /* OgreBulletCollisionsStaticPlaneShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsStaticPlaneShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsStaticPlaneShape.h; sourceTree = "<group>"; };
+		F21BEA63224D5AAE001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsMinkowskiSumShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsMinkowskiSumShape.h; sourceTree = "<group>"; };
+		F21BEA64224D5AAF001D1B8A /* OgreBulletCollisionsTriangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsTriangleShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsTriangleShape.h; sourceTree = "<group>"; };
+		F21BEA65224D5AAF001D1B8A /* OgreBulletCollisionsCapsuleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsCapsuleShape.h; path = ../../ogrebullet/Collisions/include/Shapes/OgreBulletCollisionsCapsuleShape.h; sourceTree = "<group>"; };
+		F21BEA73224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsMeshToShapeConverter.h; path = ../../ogrebullet/Collisions/include/Utils/OgreBulletCollisionsMeshToShapeConverter.h; sourceTree = "<group>"; };
+		F21BEA74224D5ADA001D1B8A /* OgreBulletConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletConverter.h; path = ../../ogrebullet/Collisions/include/Utils/OgreBulletConverter.h; sourceTree = "<group>"; };
+		F21BEA75224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsMeshToShapeConverter.cpp; path = ../../ogrebullet/Collisions/src/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp; sourceTree = "<group>"; };
+		F21BEA77224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsObjectState.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsObjectState.h; sourceTree = "<group>"; };
+		F21BEA78224D5AF3001D1B8A /* OgreBulletCollisionsRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsRay.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsRay.h; sourceTree = "<group>"; };
+		F21BEA79224D5AF3001D1B8A /* OgreBulletCollisions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisions.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisions.h; sourceTree = "<group>"; };
+		F21BEA7A224D5AF3001D1B8A /* OgreBulletCollisionsObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsObject.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsObject.cpp; sourceTree = "<group>"; };
+		F21BEA7B224D5AF3001D1B8A /* OgreBulletCollisionsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsObject.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsObject.h; sourceTree = "<group>"; };
+		F21BEA7C224D5AF3001D1B8A /* OgreBulletCollisionsWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsWorld.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsWorld.cpp; sourceTree = "<group>"; };
+		F21BEA7D224D5AF3001D1B8A /* OgreBulletCollisionsPrecompiled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsPrecompiled.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsPrecompiled.cpp; sourceTree = "<group>"; };
+		F21BEA7E224D5AF3001D1B8A /* OgreBulletCollisionsShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsShape.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsShape.h; sourceTree = "<group>"; };
+		F21BEA7F224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsObjectState.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsObjectState.cpp; sourceTree = "<group>"; };
+		F21BEA80224D5AF3001D1B8A /* OgreBulletCollisionsPreRequisites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsPreRequisites.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsPreRequisites.h; sourceTree = "<group>"; };
+		F21BEA81224D5AF3001D1B8A /* OgreBulletCollisionsWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletCollisionsWorld.h; path = ../../ogrebullet/Collisions/include/OgreBulletCollisionsWorld.h; sourceTree = "<group>"; };
+		F21BEA82224D5AF3001D1B8A /* OgreBulletCollisionsShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsShape.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsShape.cpp; sourceTree = "<group>"; };
+		F21BEA83224D5AF3001D1B8A /* OgreBulletCollisionsRay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletCollisionsRay.cpp; path = ../../ogrebullet/Collisions/src/OgreBulletCollisionsRay.cpp; sourceTree = "<group>"; };
+		F21BEA8C224D5B4C001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsPoint2pointConstraint.cpp; path = ../../ogrebullet/Dynamics/src/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp; sourceTree = "<group>"; };
+		F21BEA8D224D5B4C001D1B8A /* OgreBulletDynamics6DofConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamics6DofConstraint.cpp; path = ../../ogrebullet/Dynamics/src/Constraints/OgreBulletDynamics6DofConstraint.cpp; sourceTree = "<group>"; };
+		F21BEA8E224D5B4C001D1B8A /* OgreBulletDynamicsHingeConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsHingeConstraint.cpp; path = ../../ogrebullet/Dynamics/src/Constraints/OgreBulletDynamicsHingeConstraint.cpp; sourceTree = "<group>"; };
+		F21BEA8F224D5B4C001D1B8A /* OgreBulletDynamics6DofConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamics6DofConstraint.h; path = ../../ogrebullet/Dynamics/include/Constraints/OgreBulletDynamics6DofConstraint.h; sourceTree = "<group>"; };
+		F21BEA90224D5B4C001D1B8A /* OgreBulletDynamicsConeTwistConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsConeTwistConstraint.cpp; path = ../../ogrebullet/Dynamics/src/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp; sourceTree = "<group>"; };
+		F21BEA91224D5B4C001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsPoint2pointConstraint.h; path = ../../ogrebullet/Dynamics/include/Constraints/OgreBulletDynamicsPoint2pointConstraint.h; sourceTree = "<group>"; };
+		F21BEA92224D5B4C001D1B8A /* OgreBulletDynamicsRaycastVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsRaycastVehicle.h; path = ../../ogrebullet/Dynamics/include/Constraints/OgreBulletDynamicsRaycastVehicle.h; sourceTree = "<group>"; };
+		F21BEA93224D5B4C001D1B8A /* OgreBulletDynamicsRaycastVehicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsRaycastVehicle.cpp; path = ../../ogrebullet/Dynamics/src/Constraints/OgreBulletDynamicsRaycastVehicle.cpp; sourceTree = "<group>"; };
+		F21BEA94224D5B4D001D1B8A /* OgreBulletDynamicsHingeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsHingeConstraint.h; path = ../../ogrebullet/Dynamics/include/Constraints/OgreBulletDynamicsHingeConstraint.h; sourceTree = "<group>"; };
+		F21BEA95224D5B4D001D1B8A /* OgreBulletDynamicsConeTwistConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsConeTwistConstraint.h; path = ../../ogrebullet/Dynamics/include/Constraints/OgreBulletDynamicsConeTwistConstraint.h; sourceTree = "<group>"; };
+		F21BEA9B224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsRagDoll.cpp; path = ../../ogrebullet/Dynamics/src/Prefab/OgreBulletDynamicsRagDoll.cpp; sourceTree = "<group>"; };
+		F21BEA9C224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsRagDoll.h; path = ../../ogrebullet/Dynamics/include/Prefab/OgreBulletDynamicsRagDoll.h; sourceTree = "<group>"; };
+		F21BEA9E224D5B79001D1B8A /* OgreBulletDynamicsRigidBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsRigidBody.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsRigidBody.h; sourceTree = "<group>"; };
+		F21BEA9F224D5B79001D1B8A /* OgreBulletDynamics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamics.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamics.h; sourceTree = "<group>"; };
+		F21BEAA0224D5B79001D1B8A /* OgreBulletDynamicsCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsCharacter.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsCharacter.h; sourceTree = "<group>"; };
+		F21BEAA1224D5B79001D1B8A /* OgreBulletDynamicsRigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsRigidBody.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsRigidBody.cpp; sourceTree = "<group>"; };
+		F21BEAA2224D5B79001D1B8A /* OgreBulletDynamicsConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsConstraint.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsConstraint.h; sourceTree = "<group>"; };
+		F21BEAA3224D5B79001D1B8A /* OgreBulletDynamicsObjectState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsObjectState.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsObjectState.cpp; sourceTree = "<group>"; };
+		F21BEAA4224D5B79001D1B8A /* OgreBulletDynamicsWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsWorld.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsWorld.cpp; sourceTree = "<group>"; };
+		F21BEAA5224D5B79001D1B8A /* OgreBulletDynamicsObjectState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsObjectState.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsObjectState.h; sourceTree = "<group>"; };
+		F21BEAA6224D5B79001D1B8A /* OgreBulletDynamicsCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsCharacter.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsCharacter.cpp; sourceTree = "<group>"; };
+		F21BEAA7224D5B79001D1B8A /* OgreBulletDynamicsPrecompiled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsPrecompiled.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsPrecompiled.cpp; sourceTree = "<group>"; };
+		F21BEAA8224D5B79001D1B8A /* OgreBulletDynamicsPreRequisites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsPreRequisites.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsPreRequisites.h; sourceTree = "<group>"; };
+		F21BEAA9224D5B79001D1B8A /* OgreBulletDynamicsConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBulletDynamicsConstraint.cpp; path = ../../ogrebullet/Dynamics/src/OgreBulletDynamicsConstraint.cpp; sourceTree = "<group>"; };
+		F21BEAAA224D5B7A001D1B8A /* OgreBulletDynamicsWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OgreBulletDynamicsWorld.h; path = ../../ogrebullet/Dynamics/include/OgreBulletDynamicsWorld.h; sourceTree = "<group>"; };
+		F21BEB80224D6361001D1B8A /* libBulletCollision_xcode4_x64_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision_xcode4_x64_release.a; path = ../../bullet3/bin/libBulletCollision_xcode4_x64_release.a; sourceTree = "<group>"; };
+		F21BEB81224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics_xcode4_x64_release.a; path = ../../bullet3/bin/libBulletDynamics_xcode4_x64_release.a; sourceTree = "<group>"; };
+		F21BEB84224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath_xcode4_x64_release.a; path = ../../bullet3/bin/libLinearMath_xcode4_x64_release.a; sourceTree = "<group>"; };
+		F21BEB86224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libConvexDecomposition_xcode4_x64_release.a; path = ../../bullet3/bin/libConvexDecomposition_xcode4_x64_release.a; sourceTree = "<group>"; };
+		F21BEB88224D651F001D1B8A /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = "../../FMOD-API/api/lowlevel/lib/libfmod.dylib"; sourceTree = "<group>"; };
+		F21BEB8A224D6AB2001D1B8A /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = ../../ogre/lib/macosx/Ogre.framework; sourceTree = "<group>"; };
+		F21BEB8C224D6B9D001D1B8A /* OgreOverlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OgreOverlay.framework; path = ../../ogre/lib/macosx/OgreOverlay.framework; sourceTree = "<group>"; };
+		F21BEB98224D6EBD001D1B8A /* libzzip.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzzip.13.dylib; path = ../../ogre/Dependencies/lib/libzzip.13.dylib; sourceTree = "<group>"; };
+		F21BEB9B224D6F17001D1B8A /* stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stats.cpp; path = ../../src/frontend/stats.cpp; sourceTree = "<group>"; };
+		F21BEB9C224D6F17001D1B8A /* skyscraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skyscraper.h; path = ../../src/frontend/skyscraper.h; sourceTree = "<group>"; };
+		F21BEB9D224D6F17001D1B8A /* parameterviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parameterviewer.h; path = ../../src/frontend/parameterviewer.h; sourceTree = "<group>"; };
+		F21BEB9E224D6F17001D1B8A /* skycontrol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = skycontrol.cpp; path = ../../src/frontend/skycontrol.cpp; sourceTree = "<group>"; };
+		F21BEB9F224D6F17001D1B8A /* stackwalker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stackwalker.cpp; path = ../../src/frontend/stackwalker.cpp; sourceTree = "<group>"; };
+		F21BEBA0224D6F17001D1B8A /* objectinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objectinfo.h; path = ../../src/frontend/objectinfo.h; sourceTree = "<group>"; };
+		F21BEBA1224D6F17001D1B8A /* textwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = textwindow.cpp; path = ../../src/frontend/textwindow.cpp; sourceTree = "<group>"; };
+		F21BEBA2224D6F18001D1B8A /* skyscraper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = skyscraper.cpp; path = ../../src/frontend/skyscraper.cpp; sourceTree = "<group>"; };
+		F21BEBA3224D6F18001D1B8A /* cameracontrol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cameracontrol.cpp; path = ../../src/frontend/cameracontrol.cpp; sourceTree = "<group>"; };
+		F21BEBA4224D6F18001D1B8A /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stats.h; path = ../../src/frontend/stats.h; sourceTree = "<group>"; };
+		F21BEBA5224D6F18001D1B8A /* moveobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = moveobject.h; path = ../../src/frontend/moveobject.h; sourceTree = "<group>"; };
+		F21BEBA6224D6F18001D1B8A /* moveobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = moveobject.cpp; path = ../../src/frontend/moveobject.cpp; sourceTree = "<group>"; };
+		F21BEBA7224D6F18001D1B8A /* console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console.cpp; path = ../../src/frontend/console.cpp; sourceTree = "<group>"; };
+		F21BEBA8224D6F18001D1B8A /* actionviewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actionviewer.cpp; path = ../../src/frontend/actionviewer.cpp; sourceTree = "<group>"; };
+		F21BEBA9224D6F18001D1B8A /* skycontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skycontrol.h; path = ../../src/frontend/skycontrol.h; sourceTree = "<group>"; };
+		F21BEBAA224D6F18001D1B8A /* stackwalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stackwalker.h; path = ../../src/frontend/stackwalker.h; sourceTree = "<group>"; };
+		F21BEBAB224D6F18001D1B8A /* script_buildings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_buildings.cpp; path = ../../src/frontend/script_buildings.cpp; sourceTree = "<group>"; };
+		F21BEBAC224D6F18001D1B8A /* script_floors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_floors.cpp; path = ../../src/frontend/script_floors.cpp; sourceTree = "<group>"; };
+		F21BEBAD224D6F18001D1B8A /* editelevator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = editelevator.cpp; path = ../../src/frontend/editelevator.cpp; sourceTree = "<group>"; };
+		F21BEBAE224D6F18001D1B8A /* uexception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uexception.h; path = ../../src/frontend/uexception.h; sourceTree = "<group>"; };
+		F21BEBAF224D6F18001D1B8A /* script_elevators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_elevators.cpp; path = ../../src/frontend/script_elevators.cpp; sourceTree = "<group>"; };
+		F21BEBB0224D6F18001D1B8A /* enginemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enginemanager.cpp; path = ../../src/frontend/enginemanager.cpp; sourceTree = "<group>"; };
+		F21BEBB1224D6F18001D1B8A /* script_commands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_commands.cpp; path = ../../src/frontend/script_commands.cpp; sourceTree = "<group>"; };
+		F21BEBB2224D6F18001D1B8A /* loaddialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loaddialog.cpp; path = ../../src/frontend/loaddialog.cpp; sourceTree = "<group>"; };
+		F21BEBB3224D6F18001D1B8A /* meshcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meshcontrol.h; path = ../../src/frontend/meshcontrol.h; sourceTree = "<group>"; };
+		F21BEBB4224D6F19001D1B8A /* keydialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keydialog.cpp; path = ../../src/frontend/keydialog.cpp; sourceTree = "<group>"; };
+		F21BEBB5224D6F19001D1B8A /* script_section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = script_section.h; path = ../../src/frontend/script_section.h; sourceTree = "<group>"; };
+		F21BEBB6224D6F19001D1B8A /* loaddialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loaddialog.h; path = ../../src/frontend/loaddialog.h; sourceTree = "<group>"; };
+		F21BEBB7224D6F19001D1B8A /* objectinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = objectinfo.cpp; path = ../../src/frontend/objectinfo.cpp; sourceTree = "<group>"; };
+		F21BEBB8224D6F19001D1B8A /* profilergui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = profilergui.h; path = ../../src/frontend/profilergui.h; sourceTree = "<group>"; };
+		F21BEBB9224D6F19001D1B8A /* mainscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mainscreen.h; path = ../../src/frontend/mainscreen.h; sourceTree = "<group>"; };
+		F21BEBBA224D6F19001D1B8A /* meshcontrol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = meshcontrol.cpp; path = ../../src/frontend/meshcontrol.cpp; sourceTree = "<group>"; };
+		F21BEBBB224D6F19001D1B8A /* actionviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = actionviewer.h; path = ../../src/frontend/actionviewer.h; sourceTree = "<group>"; };
+		F21BEBBC224D6F19001D1B8A /* createobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = createobject.cpp; path = ../../src/frontend/createobject.cpp; sourceTree = "<group>"; };
+		F21BEBBD224D6F19001D1B8A /* peoplemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = peoplemanager.h; path = ../../src/frontend/peoplemanager.h; sourceTree = "<group>"; };
+		F21BEBBE224D6F19001D1B8A /* parameterviewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parameterviewer.cpp; path = ../../src/frontend/parameterviewer.cpp; sourceTree = "<group>"; };
+		F21BEBBF224D6F19001D1B8A /* script_globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_globals.cpp; path = ../../src/frontend/script_globals.cpp; sourceTree = "<group>"; };
+		F21BEBC0224D6F1A001D1B8A /* textwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = textwindow.h; path = ../../src/frontend/textwindow.h; sourceTree = "<group>"; };
+		F21BEBC1224D6F1A001D1B8A /* keydialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keydialog.h; path = ../../src/frontend/keydialog.h; sourceTree = "<group>"; };
+		F21BEBC2224D6F1A001D1B8A /* console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = console.h; path = ../../src/frontend/console.h; sourceTree = "<group>"; };
+		F21BEBC3224D6F1A001D1B8A /* peoplemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = peoplemanager.cpp; path = ../../src/frontend/peoplemanager.cpp; sourceTree = "<group>"; };
+		F21BEBC4224D6F1A001D1B8A /* mainscreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mainscreen.cpp; path = ../../src/frontend/mainscreen.cpp; sourceTree = "<group>"; };
+		F21BEBC5224D6F1A001D1B8A /* script_elevatorcars.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_elevatorcars.cpp; path = ../../src/frontend/script_elevatorcars.cpp; sourceTree = "<group>"; };
+		F21BEBC6224D6F1A001D1B8A /* createobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = createobject.h; path = ../../src/frontend/createobject.h; sourceTree = "<group>"; };
+		F21BEBC7224D6F1A001D1B8A /* script_section.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_section.cpp; path = ../../src/frontend/script_section.cpp; sourceTree = "<group>"; };
+		F21BEBC8224D6F1A001D1B8A /* scriptprocessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scriptprocessor.cpp; path = ../../src/frontend/scriptprocessor.cpp; sourceTree = "<group>"; };
+		F21BEBC9224D6F1A001D1B8A /* profilergui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = profilergui.cpp; path = ../../src/frontend/profilergui.cpp; sourceTree = "<group>"; };
+		F21BEBCA224D6F1A001D1B8A /* enginecontext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enginecontext.cpp; path = ../../src/frontend/enginecontext.cpp; sourceTree = "<group>"; };
+		F21BEBCB224D6F1A001D1B8A /* scriptprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scriptprocessor.h; path = ../../src/frontend/scriptprocessor.h; sourceTree = "<group>"; };
+		F21BEBCC224D6F1B001D1B8A /* cameracontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cameracontrol.h; path = ../../src/frontend/cameracontrol.h; sourceTree = "<group>"; };
+		F21BEBCD224D6F1B001D1B8A /* script_textures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_textures.cpp; path = ../../src/frontend/script_textures.cpp; sourceTree = "<group>"; };
+		F21BEBCE224D6F1B001D1B8A /* debugpanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debugpanel.cpp; path = ../../src/frontend/debugpanel.cpp; sourceTree = "<group>"; };
+		F21BEBCF224D6F1B001D1B8A /* enginecontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enginecontext.h; path = ../../src/frontend/enginecontext.h; sourceTree = "<group>"; };
+		F21BEBD0224D6F1B001D1B8A /* debugpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debugpanel.h; path = ../../src/frontend/debugpanel.h; sourceTree = "<group>"; };
+		F21BEBD1224D6F1B001D1B8A /* enginemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enginemanager.h; path = ../../src/frontend/enginemanager.h; sourceTree = "<group>"; };
+		F21BEBD2224D6F1B001D1B8A /* editelevator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editelevator.h; path = ../../src/frontend/editelevator.h; sourceTree = "<group>"; };
+		F21BEBF2224D8EAB001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_media-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_media-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBF3224D8EAB001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_html-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_html-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBF4224D8EAB001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_qa-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_qa-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBF5224D8EAB001D1B8A /* libwxregexu-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxregexu-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxregexu-3.1.a"; sourceTree = "<group>"; };
+		F21BEBF6224D8EAB001D1B8A /* libwxscintilla-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxscintilla-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxscintilla-3.1.a"; sourceTree = "<group>"; };
+		F21BEBF7224D8EAB001D1B8A /* libwxtiff-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxtiff-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxtiff-3.1.a"; sourceTree = "<group>"; };
+		F21BEBF8224D8EAB001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_webview-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_webview-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBF9224D8EAB001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_xrc-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_xrc-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFA224D8EAC001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFB224D8EAC001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_gl-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_gl-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFC224D8EAC001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_richtext-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_richtext-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFD224D8EAC001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_baseu_xml-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_baseu_xml-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFE224D8EAC001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_aui-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_aui-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEBFF224D8EAC001D1B8A /* libwxpng-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxpng-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxpng-3.1.a"; sourceTree = "<group>"; };
+		F21BEC00224D8EAC001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_stc-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_stc-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEC01224D8EAC001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_core-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_core-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEC02224D8EAC001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_adv-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_adv-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEC03224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_baseu_net-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_baseu_net-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEC04224D8EAD001D1B8A /* libwxjpeg-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxjpeg-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxjpeg-3.1.a"; sourceTree = "<group>"; };
+		F21BEC05224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_baseu-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_baseu-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F21BEC06224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib"; path = "../../wxWidgets/build-cocoa-release/lib/libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib"; sourceTree = "<group>"; };
+		F263572C224FC5AA00CAEEE1 /* plugins.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = plugins.cfg; path = extras/plugins.cfg; sourceTree = SOURCE_ROOT; };
+		F263572D224FC5AB00CAEEE1 /* ogre.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = ogre.cfg; path = extras/ogre.cfg; sourceTree = SOURCE_ROOT; };
+		F263572E224FC5BC00CAEEE1 /* skyscraper.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = skyscraper.ini; path = ../../skyscraper.ini; sourceTree = "<group>"; };
+		F2635B7C224FC62A00CAEEE1 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../data; sourceTree = "<group>"; };
+		F2635B7E224FC69500CAEEE1 /* Cg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cg.framework; path = ../../Cg.framework; sourceTree = "<group>"; };
+		F2635B80224FC89F00CAEEE1 /* resources.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = resources.cfg; path = ../../resources.cfg; sourceTree = "<group>"; };
+		F2635B82224FC8DB00CAEEE1 /* buildings */ = {isa = PBXFileReference; lastKnownFileType = folder; name = buildings; path = ../../buildings; sourceTree = "<group>"; };
+		F2635B84224FE56800CAEEE1 /* Sun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sun.cpp; path = "../../../ogre-caelum/main/src/Sun.cpp"; sourceTree = "<group>"; };
+		F2635B85224FE56800CAEEE1 /* Caelum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Caelum.h; path = "../../../ogre-caelum/main/include/Caelum.h"; sourceTree = "<group>"; };
+		F2635B86224FE56800CAEEE1 /* InternalUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InternalUtilities.cpp; path = "../../../ogre-caelum/main/src/InternalUtilities.cpp"; sourceTree = "<group>"; };
+		F2635B87224FE56800CAEEE1 /* Moon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Moon.cpp; path = "../../../ogre-caelum/main/src/Moon.cpp"; sourceTree = "<group>"; };
+		F2635B88224FE56900CAEEE1 /* FlatCloudLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlatCloudLayer.h; path = "../../../ogre-caelum/main/include/FlatCloudLayer.h"; sourceTree = "<group>"; };
+		F2635B89224FE56900CAEEE1 /* Astronomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Astronomy.h; path = "../../../ogre-caelum/main/include/Astronomy.h"; sourceTree = "<group>"; };
+		F2635B8A224FE56900CAEEE1 /* CaelumScriptTranslator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaelumScriptTranslator.cpp; path = "../../../ogre-caelum/main/src/CaelumScriptTranslator.cpp"; sourceTree = "<group>"; };
+		F2635B8B224FE56900CAEEE1 /* Moon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moon.h; path = "../../../ogre-caelum/main/include/Moon.h"; sourceTree = "<group>"; };
+		F2635B8C224FE56900CAEEE1 /* CameraBoundElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraBoundElement.h; path = "../../../ogre-caelum/main/include/CameraBoundElement.h"; sourceTree = "<group>"; };
+		F2635B8D224FE56900CAEEE1 /* SkyDome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyDome.h; path = "../../../ogre-caelum/main/include/SkyDome.h"; sourceTree = "<group>"; };
+		F2635B8E224FE56900CAEEE1 /* FlatCloudLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FlatCloudLayer.cpp; path = "../../../ogre-caelum/main/src/FlatCloudLayer.cpp"; sourceTree = "<group>"; };
+		F2635B8F224FE56900CAEEE1 /* PointStarfield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PointStarfield.cpp; path = "../../../ogre-caelum/main/src/PointStarfield.cpp"; sourceTree = "<group>"; };
+		F2635B90224FE56900CAEEE1 /* UniversalClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniversalClock.h; path = "../../../ogre-caelum/main/include/UniversalClock.h"; sourceTree = "<group>"; };
+		F2635B91224FE56900CAEEE1 /* Sun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sun.h; path = "../../../ogre-caelum/main/include/Sun.h"; sourceTree = "<group>"; };
+		F2635B92224FE56900CAEEE1 /* FastGpuParamRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FastGpuParamRef.cpp; path = "../../../ogre-caelum/main/src/FastGpuParamRef.cpp"; sourceTree = "<group>"; };
+		F2635B93224FE56900CAEEE1 /* TypeDescriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TypeDescriptor.cpp; path = "../../../ogre-caelum/main/src/TypeDescriptor.cpp"; sourceTree = "<group>"; };
+		F2635B94224FE56900CAEEE1 /* CaelumExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumExceptions.h; path = "../../../ogre-caelum/main/include/CaelumExceptions.h"; sourceTree = "<group>"; };
+		F2635B95224FE56900CAEEE1 /* CaelumPrerequisites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumPrerequisites.h; path = "../../../ogre-caelum/main/include/CaelumPrerequisites.h"; sourceTree = "<group>"; };
+		F2635B96224FE56900CAEEE1 /* CameraBoundElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraBoundElement.cpp; path = "../../../ogre-caelum/main/src/CameraBoundElement.cpp"; sourceTree = "<group>"; };
+		F2635B97224FE56900CAEEE1 /* CloudSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudSystem.h; path = "../../../ogre-caelum/main/include/CloudSystem.h"; sourceTree = "<group>"; };
+		F2635B98224FE56900CAEEE1 /* ImageStarfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageStarfield.h; path = "../../../ogre-caelum/main/include/ImageStarfield.h"; sourceTree = "<group>"; };
+		F2635B99224FE56900CAEEE1 /* BrightStarCatalogue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BrightStarCatalogue.cpp; path = "../../../ogre-caelum/main/src/BrightStarCatalogue.cpp"; sourceTree = "<group>"; };
+		F2635B9A224FE56900CAEEE1 /* ImageStarfield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageStarfield.cpp; path = "../../../ogre-caelum/main/src/ImageStarfield.cpp"; sourceTree = "<group>"; };
+		F2635B9B224FE56900CAEEE1 /* SkyLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyLight.h; path = "../../../ogre-caelum/main/include/SkyLight.h"; sourceTree = "<group>"; };
+		F2635B9C224FE56900CAEEE1 /* CaelumPrecompiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumPrecompiled.h; path = "../../../ogre-caelum/main/include/CaelumPrecompiled.h"; sourceTree = "<group>"; };
+		F2635B9D224FE56A00CAEEE1 /* GroundFog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundFog.h; path = "../../../ogre-caelum/main/include/GroundFog.h"; sourceTree = "<group>"; };
+		F2635B9E224FE56A00CAEEE1 /* CaelumPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaelumPlugin.cpp; path = "../../../ogre-caelum/main/src/CaelumPlugin.cpp"; sourceTree = "<group>"; };
+		F2635B9F224FE56A00CAEEE1 /* GroundFog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroundFog.cpp; path = "../../../ogre-caelum/main/src/GroundFog.cpp"; sourceTree = "<group>"; };
+		F2635BA0224FE56A00CAEEE1 /* PrecipitationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrecipitationController.h; path = "../../../ogre-caelum/main/include/PrecipitationController.h"; sourceTree = "<group>"; };
+		F2635BA1224FE56A00CAEEE1 /* DepthComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DepthComposer.h; path = "../../../ogre-caelum/main/include/DepthComposer.h"; sourceTree = "<group>"; };
+		F2635BA2224FE56A00CAEEE1 /* UniversalClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UniversalClock.cpp; path = "../../../ogre-caelum/main/src/UniversalClock.cpp"; sourceTree = "<group>"; };
+		F2635BA3224FE56A00CAEEE1 /* CaelumSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaelumSystem.cpp; path = "../../../ogre-caelum/main/src/CaelumSystem.cpp"; sourceTree = "<group>"; };
+		F2635BA4224FE56A00CAEEE1 /* TypeDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDescriptor.h; path = "../../../ogre-caelum/main/include/TypeDescriptor.h"; sourceTree = "<group>"; };
+		F2635BA5224FE56A00CAEEE1 /* CaelumPrecompiled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaelumPrecompiled.cpp; path = "../../../ogre-caelum/main/src/CaelumPrecompiled.cpp"; sourceTree = "<group>"; };
+		F2635BA6224FE56A00CAEEE1 /* CloudSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CloudSystem.cpp; path = "../../../ogre-caelum/main/src/CloudSystem.cpp"; sourceTree = "<group>"; };
+		F2635BA7224FE56A00CAEEE1 /* PrivatePtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivatePtr.h; path = "../../../ogre-caelum/main/include/PrivatePtr.h"; sourceTree = "<group>"; };
+		F2635BA8224FE56A00CAEEE1 /* CaelumConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumConfig.h; path = "../../../ogre-caelum/main/include/CaelumConfig.h"; sourceTree = "<group>"; };
+		F2635BA9224FE56A00CAEEE1 /* PrecipitationController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PrecipitationController.cpp; path = "../../../ogre-caelum/main/src/PrecipitationController.cpp"; sourceTree = "<group>"; };
+		F2635BAA224FE56A00CAEEE1 /* CaelumPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumPlugin.h; path = "../../../ogre-caelum/main/include/CaelumPlugin.h"; sourceTree = "<group>"; };
+		F2635BAB224FE56B00CAEEE1 /* CaelumDefaultTypeDescriptorData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaelumDefaultTypeDescriptorData.cpp; path = "../../../ogre-caelum/main/src/CaelumDefaultTypeDescriptorData.cpp"; sourceTree = "<group>"; };
+		F2635BAC224FE56B00CAEEE1 /* DepthComposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DepthComposer.cpp; path = "../../../ogre-caelum/main/src/DepthComposer.cpp"; sourceTree = "<group>"; };
+		F2635BAD224FE56B00CAEEE1 /* CaelumSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumSystem.h; path = "../../../ogre-caelum/main/include/CaelumSystem.h"; sourceTree = "<group>"; };
+		F2635BAE224FE56B00CAEEE1 /* CaelumScriptTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaelumScriptTranslator.h; path = "../../../ogre-caelum/main/include/CaelumScriptTranslator.h"; sourceTree = "<group>"; };
+		F2635BAF224FE56B00CAEEE1 /* FastGpuParamRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FastGpuParamRef.h; path = "../../../ogre-caelum/main/include/FastGpuParamRef.h"; sourceTree = "<group>"; };
+		F2635BB0224FE56B00CAEEE1 /* SkyLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkyLight.cpp; path = "../../../ogre-caelum/main/src/SkyLight.cpp"; sourceTree = "<group>"; };
+		F2635BB1224FE56B00CAEEE1 /* InternalUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternalUtilities.h; path = "../../../ogre-caelum/main/include/InternalUtilities.h"; sourceTree = "<group>"; };
+		F2635BB2224FE56B00CAEEE1 /* Astronomy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Astronomy.cpp; path = "../../../ogre-caelum/main/src/Astronomy.cpp"; sourceTree = "<group>"; };
+		F2635BB3224FE56B00CAEEE1 /* SkyDome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkyDome.cpp; path = "../../../ogre-caelum/main/src/SkyDome.cpp"; sourceTree = "<group>"; };
+		F2635BB4224FE56B00CAEEE1 /* PointStarfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointStarfield.h; path = "../../../ogre-caelum/main/include/PointStarfield.h"; sourceTree = "<group>"; };
+		F2AE7C12224E653700603D42 /* RenderSystem_GL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RenderSystem_GL.framework; path = ../../ogre/lib/macosx/RenderSystem_GL.framework; sourceTree = "<group>"; };
+		F2AE7C19224E861E00603D42 /* Plugin_OctreeSceneManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Plugin_OctreeSceneManager.framework; path = ../../ogre/lib/macosx/Plugin_OctreeSceneManager.framework; sourceTree = "<group>"; };
+		F2AE7C1B224EB0CE00603D42 /* Codec_FreeImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Codec_FreeImage.framework; path = ../../ogre/lib/macosx/Codec_FreeImage.framework; sourceTree = "<group>"; };
+		F2AE7C21224EC17600603D42 /* Plugin_CgProgramManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Plugin_CgProgramManager.framework; path = ../../ogre/lib/macosx/Plugin_CgProgramManager.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F21BE93E224D2F31001D1B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21BEC0E224D8EAD001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC09224D8EAD001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib in Frameworks */,
+				F21BEB82224D6361001D1B8A /* libBulletCollision_xcode4_x64_release.a in Frameworks */,
+				F21BEC11224D8EAD001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC17224D8EAD001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC13224D8EAD001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib in Frameworks */,
+				F21BEB83224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a in Frameworks */,
+				F21BEC0B224D8EAD001D1B8A /* libwxscintilla-3.1.a in Frameworks */,
+				F21BEC0F224D8EAD001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC12224D8EAD001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC0C224D8EAD001D1B8A /* libwxtiff-3.1.a in Frameworks */,
+				F21BEC16224D8EAD001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib in Frameworks */,
+				F21BEB87224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a in Frameworks */,
+				F21BEC0A224D8EAD001D1B8A /* libwxregexu-3.1.a in Frameworks */,
+				F21BEC08224D8EAD001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC07224D8EAD001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib in Frameworks */,
+				F21BEB85224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a in Frameworks */,
+				F21BEC19224D8EAD001D1B8A /* libwxjpeg-3.1.a in Frameworks */,
+				F21BEC14224D8EAD001D1B8A /* libwxpng-3.1.a in Frameworks */,
+				F21BEC0D224D8EAD001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib in Frameworks */,
+				F21BEB89224D6520001D1B8A /* libfmod.dylib in Frameworks */,
+				F21BEB8B224D6AB3001D1B8A /* Ogre.framework in Frameworks */,
+				F21BEB8D224D6B9D001D1B8A /* OgreOverlay.framework in Frameworks */,
+				F21BEC10224D8EAD001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC1B224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC18224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC1A224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib in Frameworks */,
+				F21BEC15224D8EAD001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F21BE938224D2F31001D1B8A = {
+			isa = PBXGroup;
+			children = (
+				F21BE943224D2F31001D1B8A /* Skyscraper */,
+				F21BEB7F224D6343001D1B8A /* External Libraries */,
+				F21BE942224D2F31001D1B8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F21BE942224D2F31001D1B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21BE941224D2F31001D1B8A /* Skyscraper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F21BE943224D2F31001D1B8A /* Skyscraper */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEC1C224D8F87001D1B8A /* ogrecaelum */,
+				F21BE9D6224D598F001D1B8A /* ogrebullet */,
+				F21BE959224D30A9001D1B8A /* frontend */,
+				F21BE95A224D30AF001D1B8A /* sbs */,
+				F21BEC75224D91E9001D1B8A /* Resources */,
+			);
+			path = Skyscraper;
+			sourceTree = "<group>";
+		};
+		F21BE959224D30A9001D1B8A /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEBA8224D6F18001D1B8A /* actionviewer.cpp */,
+				F21BEBBB224D6F19001D1B8A /* actionviewer.h */,
+				F21BEBA3224D6F18001D1B8A /* cameracontrol.cpp */,
+				F21BEBCC224D6F1B001D1B8A /* cameracontrol.h */,
+				F21BEBA7224D6F18001D1B8A /* console.cpp */,
+				F21BEBC2224D6F1A001D1B8A /* console.h */,
+				F21BEBBC224D6F19001D1B8A /* createobject.cpp */,
+				F21BEBC6224D6F1A001D1B8A /* createobject.h */,
+				F21BEBCE224D6F1B001D1B8A /* debugpanel.cpp */,
+				F21BEBD0224D6F1B001D1B8A /* debugpanel.h */,
+				F21BEBAD224D6F18001D1B8A /* editelevator.cpp */,
+				F21BEBD2224D6F1B001D1B8A /* editelevator.h */,
+				F21BEBCA224D6F1A001D1B8A /* enginecontext.cpp */,
+				F21BEBCF224D6F1B001D1B8A /* enginecontext.h */,
+				F21BEBB0224D6F18001D1B8A /* enginemanager.cpp */,
+				F21BEBD1224D6F1B001D1B8A /* enginemanager.h */,
+				F21BEBB4224D6F19001D1B8A /* keydialog.cpp */,
+				F21BEBC1224D6F1A001D1B8A /* keydialog.h */,
+				F21BEBB2224D6F18001D1B8A /* loaddialog.cpp */,
+				F21BEBB6224D6F19001D1B8A /* loaddialog.h */,
+				F21BEBC4224D6F1A001D1B8A /* mainscreen.cpp */,
+				F21BEBB9224D6F19001D1B8A /* mainscreen.h */,
+				F21BEBBA224D6F19001D1B8A /* meshcontrol.cpp */,
+				F21BEBB3224D6F18001D1B8A /* meshcontrol.h */,
+				F21BEBA6224D6F18001D1B8A /* moveobject.cpp */,
+				F21BEBA5224D6F18001D1B8A /* moveobject.h */,
+				F21BEBB7224D6F19001D1B8A /* objectinfo.cpp */,
+				F21BEBA0224D6F17001D1B8A /* objectinfo.h */,
+				F21BEBBE224D6F19001D1B8A /* parameterviewer.cpp */,
+				F21BEB9D224D6F17001D1B8A /* parameterviewer.h */,
+				F21BEBC3224D6F1A001D1B8A /* peoplemanager.cpp */,
+				F21BEBBD224D6F19001D1B8A /* peoplemanager.h */,
+				F21BEBC9224D6F1A001D1B8A /* profilergui.cpp */,
+				F21BEBB8224D6F19001D1B8A /* profilergui.h */,
+				F21BEBAB224D6F18001D1B8A /* script_buildings.cpp */,
+				F21BEBB1224D6F18001D1B8A /* script_commands.cpp */,
+				F21BEBC5224D6F1A001D1B8A /* script_elevatorcars.cpp */,
+				F21BEBAF224D6F18001D1B8A /* script_elevators.cpp */,
+				F21BEBAC224D6F18001D1B8A /* script_floors.cpp */,
+				F21BEBBF224D6F19001D1B8A /* script_globals.cpp */,
+				F21BEBC7224D6F1A001D1B8A /* script_section.cpp */,
+				F21BEBB5224D6F19001D1B8A /* script_section.h */,
+				F21BEBCD224D6F1B001D1B8A /* script_textures.cpp */,
+				F21BEBC8224D6F1A001D1B8A /* scriptprocessor.cpp */,
+				F21BEBCB224D6F1A001D1B8A /* scriptprocessor.h */,
+				F21BEB9E224D6F17001D1B8A /* skycontrol.cpp */,
+				F21BEBA9224D6F18001D1B8A /* skycontrol.h */,
+				F21BEBA2224D6F18001D1B8A /* skyscraper.cpp */,
+				F21BEB9C224D6F17001D1B8A /* skyscraper.h */,
+				F21BEB9F224D6F17001D1B8A /* stackwalker.cpp */,
+				F21BEBAA224D6F18001D1B8A /* stackwalker.h */,
+				F21BEB9B224D6F17001D1B8A /* stats.cpp */,
+				F21BEBA4224D6F18001D1B8A /* stats.h */,
+				F21BEBA1224D6F17001D1B8A /* textwindow.cpp */,
+				F21BEBC0224D6F1A001D1B8A /* textwindow.h */,
+				F21BEBAE224D6F18001D1B8A /* uexception.h */,
+			);
+			name = frontend;
+			sourceTree = "<group>";
+		};
+		F21BE95A224D30AF001D1B8A /* sbs */ = {
+			isa = PBXGroup;
+			children = (
+				F21BE999224D314A001D1B8A /* action.cpp */,
+				F21BE973224D3148001D1B8A /* action.h */,
+				F21BE9A3224D314B001D1B8A /* buttonpanel.cpp */,
+				F21BE95B224D3147001D1B8A /* buttonpanel.h */,
+				F21BE984224D3149001D1B8A /* callbutton.cpp */,
+				F21BE9AB224D314B001D1B8A /* callbutton.h */,
+				F21BE996224D314A001D1B8A /* camera.cpp */,
+				F21BE963224D3147001D1B8A /* camera.h */,
+				F21BE976224D3148001D1B8A /* cameratexture.cpp */,
+				F21BE99F224D314B001D1B8A /* cameratexture.h */,
+				F21BE972224D3148001D1B8A /* control.cpp */,
+				F21BE975224D3148001D1B8A /* control.h */,
+				F21BE97E224D3148001D1B8A /* directional.cpp */,
+				F21BE988224D3149001D1B8A /* directional.h */,
+				F21BE95E224D3147001D1B8A /* door.cpp */,
+				F21BE980224D3149001D1B8A /* door.h */,
+				F21BE998224D314A001D1B8A /* dynamicmesh.cpp */,
+				F21BE997224D314A001D1B8A /* dynamicmesh.h */,
+				F21BE962224D3147001D1B8A /* elevator.cpp */,
+				F21BE96B224D3147001D1B8A /* elevator.h */,
+				F21BE96D224D3147001D1B8A /* elevatorcar.cpp */,
+				F21BE9A5224D314B001D1B8A /* elevatorcar.h */,
+				F21BE9A0224D314B001D1B8A /* elevatordoor.cpp */,
+				F21BE990224D314A001D1B8A /* elevatordoor.h */,
+				F21BE96A224D3147001D1B8A /* escalator.cpp */,
+				F21BE95D224D3147001D1B8A /* escalator.h */,
+				F21BE99E224D314A001D1B8A /* floor.cpp */,
+				F21BE986224D3149001D1B8A /* floor.h */,
+				F21BE99C224D314A001D1B8A /* floorindicator.cpp */,
+				F21BE992224D314A001D1B8A /* floorindicator.h */,
+				F21BE982224D3149001D1B8A /* globals.cpp */,
+				F21BE970224D3148001D1B8A /* globals.h */,
+				F21BE99D224D314A001D1B8A /* light.cpp */,
+				F21BE983224D3149001D1B8A /* light.h */,
+				F21BE994224D314A001D1B8A /* manager.cpp */,
+				F21BE985224D3149001D1B8A /* manager.h */,
+				F21BE971224D3148001D1B8A /* mesh.cpp */,
+				F21BE974224D3148001D1B8A /* mesh.h */,
+				F21BE95C224D3147001D1B8A /* model.cpp */,
+				F21BE981224D3149001D1B8A /* model.h */,
+				F21BE95F224D3147001D1B8A /* movingwalkway.cpp */,
+				F21BE96C224D3147001D1B8A /* movingwalkway.h */,
+				F21BE9AC224D314B001D1B8A /* object.cpp */,
+				F21BE97F224D3148001D1B8A /* object.h */,
+				F21BE965224D3147001D1B8A /* person.cpp */,
+				F21BE9A7224D314B001D1B8A /* person.h */,
+				F21BE96F224D3148001D1B8A /* polygon.cpp */,
+				F21BE98C224D3149001D1B8A /* polygon.h */,
+				F21BE991224D314A001D1B8A /* profiler.cpp */,
+				F21BE979224D3148001D1B8A /* profiler.h */,
+				F21BE967224D3147001D1B8A /* random.cpp */,
+				F21BE98D224D3149001D1B8A /* random.h */,
+				F21BE9A6224D314B001D1B8A /* revolvingdoor.cpp */,
+				F21BE98E224D3149001D1B8A /* revolvingdoor.h */,
+				F21BE97B224D3148001D1B8A /* route.cpp */,
+				F21BE9A8224D314B001D1B8A /* route.h */,
+				F21BE9A1224D314B001D1B8A /* sbs.cpp */,
+				F21BE968224D3147001D1B8A /* sbs.h */,
+				F21BE987224D3149001D1B8A /* scenenode.cpp */,
+				F21BE977224D3148001D1B8A /* scenenode.h */,
+				F21BE964224D3147001D1B8A /* shaft.cpp */,
+				F21BE98B224D3149001D1B8A /* shaft.h */,
+				F21BE99B224D314A001D1B8A /* sound.cpp */,
+				F21BE99A224D314A001D1B8A /* sound.h */,
+				F21BE978224D3148001D1B8A /* soundsystem.cpp */,
+				F21BE97C224D3148001D1B8A /* soundsystem.h */,
+				F21BE960224D3147001D1B8A /* stairs.cpp */,
+				F21BE9A4224D314B001D1B8A /* stairs.h */,
+				F21BE969224D3147001D1B8A /* step.cpp */,
+				F21BE96E224D3147001D1B8A /* step.h */,
+				F21BE966224D3147001D1B8A /* texmap.cpp */,
+				F21BE9A2224D314B001D1B8A /* texture.cpp */,
+				F21BE961224D3147001D1B8A /* texture.h */,
+				F21BE989224D3149001D1B8A /* timer.cpp */,
+				F21BE9A9224D314B001D1B8A /* timer.h */,
+				F21BE995224D314A001D1B8A /* triangle.h */,
+				F21BE97D224D3148001D1B8A /* trigger.cpp */,
+				F21BE98F224D314A001D1B8A /* trigger.h */,
+				F21BE98A224D3149001D1B8A /* unix.cpp */,
+				F21BE9AA224D314B001D1B8A /* unix.h */,
+				F21BE97A224D3148001D1B8A /* wall.cpp */,
+				F21BE993224D314A001D1B8A /* wall.h */,
+			);
+			name = sbs;
+			sourceTree = "<group>";
+		};
+		F21BE9D6224D598F001D1B8A /* ogrebullet */ = {
+			isa = PBXGroup;
+			children = (
+				F21BE9D7224D59A3001D1B8A /* Collisions */,
+				F21BE9D8224D59AA001D1B8A /* Dynamics */,
+			);
+			name = ogrebullet;
+			sourceTree = "<group>";
+		};
+		F21BE9D7224D59A3001D1B8A /* Collisions */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA3C224D5A55001D1B8A /* Debug */,
+				F21BEA3D224D5A5B001D1B8A /* Shapes */,
+				F21BEA3E224D5A61001D1B8A /* Utils */,
+				F21BEA79224D5AF3001D1B8A /* OgreBulletCollisions.h */,
+				F21BEA7A224D5AF3001D1B8A /* OgreBulletCollisionsObject.cpp */,
+				F21BEA7B224D5AF3001D1B8A /* OgreBulletCollisionsObject.h */,
+				F21BEA7F224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.cpp */,
+				F21BEA77224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.h */,
+				F21BEA7D224D5AF3001D1B8A /* OgreBulletCollisionsPrecompiled.cpp */,
+				F21BEA80224D5AF3001D1B8A /* OgreBulletCollisionsPreRequisites.h */,
+				F21BEA83224D5AF3001D1B8A /* OgreBulletCollisionsRay.cpp */,
+				F21BEA78224D5AF3001D1B8A /* OgreBulletCollisionsRay.h */,
+				F21BEA82224D5AF3001D1B8A /* OgreBulletCollisionsShape.cpp */,
+				F21BEA7E224D5AF3001D1B8A /* OgreBulletCollisionsShape.h */,
+				F21BEA7C224D5AF3001D1B8A /* OgreBulletCollisionsWorld.cpp */,
+				F21BEA81224D5AF3001D1B8A /* OgreBulletCollisionsWorld.h */,
+			);
+			name = Collisions;
+			sourceTree = "<group>";
+		};
+		F21BE9D8224D59AA001D1B8A /* Dynamics */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA8B224D5B1C001D1B8A /* Constraints */,
+				F21BEA8A224D5B13001D1B8A /* Prefab */,
+				F21BEA9F224D5B79001D1B8A /* OgreBulletDynamics.h */,
+				F21BEAA6224D5B79001D1B8A /* OgreBulletDynamicsCharacter.cpp */,
+				F21BEAA0224D5B79001D1B8A /* OgreBulletDynamicsCharacter.h */,
+				F21BEAA9224D5B79001D1B8A /* OgreBulletDynamicsConstraint.cpp */,
+				F21BEAA2224D5B79001D1B8A /* OgreBulletDynamicsConstraint.h */,
+				F21BEAA3224D5B79001D1B8A /* OgreBulletDynamicsObjectState.cpp */,
+				F21BEAA5224D5B79001D1B8A /* OgreBulletDynamicsObjectState.h */,
+				F21BEAA7224D5B79001D1B8A /* OgreBulletDynamicsPrecompiled.cpp */,
+				F21BEAA8224D5B79001D1B8A /* OgreBulletDynamicsPreRequisites.h */,
+				F21BEAA1224D5B79001D1B8A /* OgreBulletDynamicsRigidBody.cpp */,
+				F21BEA9E224D5B79001D1B8A /* OgreBulletDynamicsRigidBody.h */,
+				F21BEAA4224D5B79001D1B8A /* OgreBulletDynamicsWorld.cpp */,
+				F21BEAAA224D5B7A001D1B8A /* OgreBulletDynamicsWorld.h */,
+			);
+			name = Dynamics;
+			sourceTree = "<group>";
+		};
+		F21BEA3C224D5A55001D1B8A /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA45224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.cpp */,
+				F21BEA40224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.h */,
+				F21BEA3F224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.cpp */,
+				F21BEA42224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.h */,
+				F21BEA41224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.cpp */,
+				F21BEA43224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.h */,
+				F21BEA44224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.cpp */,
+				F21BEA46224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.h */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		F21BEA3D224D5A5B001D1B8A /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA61224D5AAE001D1B8A /* OgreBulletCollisionsBoxShape.cpp */,
+				F21BEA5C224D5AAE001D1B8A /* OgreBulletCollisionsBoxShape.h */,
+				F21BEA5B224D5AAE001D1B8A /* OgreBulletCollisionsCapsuleShape.cpp */,
+				F21BEA65224D5AAF001D1B8A /* OgreBulletCollisionsCapsuleShape.h */,
+				F21BEA54224D5AAE001D1B8A /* OgreBulletCollisionsCompoundShape.cpp */,
+				F21BEA5D224D5AAE001D1B8A /* OgreBulletCollisionsCompoundShape.h */,
+				F21BEA53224D5AAE001D1B8A /* OgreBulletCollisionsConeShape.cpp */,
+				F21BEA60224D5AAE001D1B8A /* OgreBulletCollisionsConeShape.h */,
+				F21BEA5F224D5AAE001D1B8A /* OgreBulletCollisionsConvexHullShape.cpp */,
+				F21BEA55224D5AAE001D1B8A /* OgreBulletCollisionsConvexHullShape.h */,
+				F21BEA51224D5AAE001D1B8A /* OgreBulletCollisionsCylinderShape.cpp */,
+				F21BEA4F224D5AAE001D1B8A /* OgreBulletCollisionsCylinderShape.h */,
+				F21BEA4C224D5AAD001D1B8A /* OgreBulletCollisionsGImpactShape.cpp */,
+				F21BEA52224D5AAE001D1B8A /* OgreBulletCollisionsGImpactShape.h */,
+				F21BEA57224D5AAE001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.cpp */,
+				F21BEA63224D5AAE001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.h */,
+				F21BEA5E224D5AAE001D1B8A /* OgreBulletCollisionsMultiSphereShape.cpp */,
+				F21BEA5A224D5AAE001D1B8A /* OgreBulletCollisionsMultiSphereShape.h */,
+				F21BEA59224D5AAE001D1B8A /* OgreBulletCollisionsSphereShape.cpp */,
+				F21BEA4D224D5AAD001D1B8A /* OgreBulletCollisionsSphereShape.h */,
+				F21BEA4E224D5AAE001D1B8A /* OgreBulletCollisionsStaticPlaneShape.cpp */,
+				F21BEA62224D5AAE001D1B8A /* OgreBulletCollisionsStaticPlaneShape.h */,
+				F21BEA50224D5AAE001D1B8A /* OgreBulletCollisionsTerrainShape.h */,
+				F21BEA4B224D5AAD001D1B8A /* OgreBulletCollisionsTriangleShape.cpp */,
+				F21BEA64224D5AAF001D1B8A /* OgreBulletCollisionsTriangleShape.h */,
+				F21BEA56224D5AAE001D1B8A /* OgreBulletCollisionsTrimeshShape.cpp */,
+				F21BEA58224D5AAE001D1B8A /* OgreBulletCollisionsTrimeshShape.h */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		F21BEA3E224D5A61001D1B8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA75224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.cpp */,
+				F21BEA73224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.h */,
+				F21BEA74224D5ADA001D1B8A /* OgreBulletConverter.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F21BEA8A224D5B13001D1B8A /* Prefab */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA9B224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.cpp */,
+				F21BEA9C224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.h */,
+			);
+			name = Prefab;
+			sourceTree = "<group>";
+		};
+		F21BEA8B224D5B1C001D1B8A /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEA8D224D5B4C001D1B8A /* OgreBulletDynamics6DofConstraint.cpp */,
+				F21BEA8F224D5B4C001D1B8A /* OgreBulletDynamics6DofConstraint.h */,
+				F21BEA90224D5B4C001D1B8A /* OgreBulletDynamicsConeTwistConstraint.cpp */,
+				F21BEA95224D5B4D001D1B8A /* OgreBulletDynamicsConeTwistConstraint.h */,
+				F21BEA8E224D5B4C001D1B8A /* OgreBulletDynamicsHingeConstraint.cpp */,
+				F21BEA94224D5B4D001D1B8A /* OgreBulletDynamicsHingeConstraint.h */,
+				F21BEA8C224D5B4C001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.cpp */,
+				F21BEA91224D5B4C001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.h */,
+				F21BEA93224D5B4C001D1B8A /* OgreBulletDynamicsRaycastVehicle.cpp */,
+				F21BEA92224D5B4C001D1B8A /* OgreBulletDynamicsRaycastVehicle.h */,
+			);
+			name = Constraints;
+			sourceTree = "<group>";
+		};
+		F21BEB7F224D6343001D1B8A /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F21BEC03224D8EAD001D1B8A /* libwx_baseu_net-3.1.3.0.0.dylib */,
+				F21BEBFD224D8EAC001D1B8A /* libwx_baseu_xml-3.1.3.0.0.dylib */,
+				F21BEC05224D8EAD001D1B8A /* libwx_baseu-3.1.3.0.0.dylib */,
+				F21BEC02224D8EAC001D1B8A /* libwx_osx_cocoau_adv-3.1.3.0.0.dylib */,
+				F21BEBFE224D8EAC001D1B8A /* libwx_osx_cocoau_aui-3.1.3.0.0.dylib */,
+				F21BEC01224D8EAC001D1B8A /* libwx_osx_cocoau_core-3.1.3.0.0.dylib */,
+				F21BEBFB224D8EAC001D1B8A /* libwx_osx_cocoau_gl-3.1.3.0.0.dylib */,
+				F21BEBF3224D8EAB001D1B8A /* libwx_osx_cocoau_html-3.1.3.0.0.dylib */,
+				F21BEBF2224D8EAB001D1B8A /* libwx_osx_cocoau_media-3.1.3.0.0.dylib */,
+				F21BEBFA224D8EAC001D1B8A /* libwx_osx_cocoau_propgrid-3.1.3.0.0.dylib */,
+				F21BEBF4224D8EAB001D1B8A /* libwx_osx_cocoau_qa-3.1.3.0.0.dylib */,
+				F21BEC06224D8EAD001D1B8A /* libwx_osx_cocoau_ribbon-3.1.3.0.0.dylib */,
+				F21BEBFC224D8EAC001D1B8A /* libwx_osx_cocoau_richtext-3.1.3.0.0.dylib */,
+				F21BEC00224D8EAC001D1B8A /* libwx_osx_cocoau_stc-3.1.3.0.0.dylib */,
+				F21BEBF8224D8EAB001D1B8A /* libwx_osx_cocoau_webview-3.1.3.0.0.dylib */,
+				F21BEBF9224D8EAB001D1B8A /* libwx_osx_cocoau_xrc-3.1.3.0.0.dylib */,
+				F21BEC04224D8EAD001D1B8A /* libwxjpeg-3.1.a */,
+				F21BEBFF224D8EAC001D1B8A /* libwxpng-3.1.a */,
+				F21BEBF5224D8EAB001D1B8A /* libwxregexu-3.1.a */,
+				F21BEBF6224D8EAB001D1B8A /* libwxscintilla-3.1.a */,
+				F21BEBF7224D8EAB001D1B8A /* libwxtiff-3.1.a */,
+				F21BEB80224D6361001D1B8A /* libBulletCollision_xcode4_x64_release.a */,
+				F21BEB81224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a */,
+				F21BEB86224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a */,
+				F21BEB84224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a */,
+				F21BEB88224D651F001D1B8A /* libfmod.dylib */,
+				F21BEB98224D6EBD001D1B8A /* libzzip.13.dylib */,
+				F2635B7E224FC69500CAEEE1 /* Cg.framework */,
+				F21BEB8A224D6AB2001D1B8A /* Ogre.framework */,
+				F21BEB8C224D6B9D001D1B8A /* OgreOverlay.framework */,
+				F2AE7C1B224EB0CE00603D42 /* Codec_FreeImage.framework */,
+				F2AE7C21224EC17600603D42 /* Plugin_CgProgramManager.framework */,
+				F2AE7C19224E861E00603D42 /* Plugin_OctreeSceneManager.framework */,
+				F2AE7C12224E653700603D42 /* RenderSystem_GL.framework */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		F21BEC1C224D8F87001D1B8A /* ogrecaelum */ = {
+			isa = PBXGroup;
+			children = (
+				F2635BB2224FE56B00CAEEE1 /* Astronomy.cpp */,
+				F2635B89224FE56900CAEEE1 /* Astronomy.h */,
+				F2635B99224FE56900CAEEE1 /* BrightStarCatalogue.cpp */,
+				F2635B85224FE56800CAEEE1 /* Caelum.h */,
+				F2635BA8224FE56A00CAEEE1 /* CaelumConfig.h */,
+				F2635BAB224FE56B00CAEEE1 /* CaelumDefaultTypeDescriptorData.cpp */,
+				F2635B94224FE56900CAEEE1 /* CaelumExceptions.h */,
+				F2635B9E224FE56A00CAEEE1 /* CaelumPlugin.cpp */,
+				F2635BAA224FE56A00CAEEE1 /* CaelumPlugin.h */,
+				F2635BA5224FE56A00CAEEE1 /* CaelumPrecompiled.cpp */,
+				F2635B9C224FE56900CAEEE1 /* CaelumPrecompiled.h */,
+				F2635B95224FE56900CAEEE1 /* CaelumPrerequisites.h */,
+				F2635B8A224FE56900CAEEE1 /* CaelumScriptTranslator.cpp */,
+				F2635BAE224FE56B00CAEEE1 /* CaelumScriptTranslator.h */,
+				F2635BA3224FE56A00CAEEE1 /* CaelumSystem.cpp */,
+				F2635BAD224FE56B00CAEEE1 /* CaelumSystem.h */,
+				F2635B96224FE56900CAEEE1 /* CameraBoundElement.cpp */,
+				F2635B8C224FE56900CAEEE1 /* CameraBoundElement.h */,
+				F2635BA6224FE56A00CAEEE1 /* CloudSystem.cpp */,
+				F2635B97224FE56900CAEEE1 /* CloudSystem.h */,
+				F2635BAC224FE56B00CAEEE1 /* DepthComposer.cpp */,
+				F2635BA1224FE56A00CAEEE1 /* DepthComposer.h */,
+				F2635B92224FE56900CAEEE1 /* FastGpuParamRef.cpp */,
+				F2635BAF224FE56B00CAEEE1 /* FastGpuParamRef.h */,
+				F2635B8E224FE56900CAEEE1 /* FlatCloudLayer.cpp */,
+				F2635B88224FE56900CAEEE1 /* FlatCloudLayer.h */,
+				F2635B9F224FE56A00CAEEE1 /* GroundFog.cpp */,
+				F2635B9D224FE56A00CAEEE1 /* GroundFog.h */,
+				F2635B9A224FE56900CAEEE1 /* ImageStarfield.cpp */,
+				F2635B98224FE56900CAEEE1 /* ImageStarfield.h */,
+				F2635B86224FE56800CAEEE1 /* InternalUtilities.cpp */,
+				F2635BB1224FE56B00CAEEE1 /* InternalUtilities.h */,
+				F2635B87224FE56800CAEEE1 /* Moon.cpp */,
+				F2635B8B224FE56900CAEEE1 /* Moon.h */,
+				F2635B8F224FE56900CAEEE1 /* PointStarfield.cpp */,
+				F2635BB4224FE56B00CAEEE1 /* PointStarfield.h */,
+				F2635BA9224FE56A00CAEEE1 /* PrecipitationController.cpp */,
+				F2635BA0224FE56A00CAEEE1 /* PrecipitationController.h */,
+				F2635BA7224FE56A00CAEEE1 /* PrivatePtr.h */,
+				F2635BB3224FE56B00CAEEE1 /* SkyDome.cpp */,
+				F2635B8D224FE56900CAEEE1 /* SkyDome.h */,
+				F2635BB0224FE56B00CAEEE1 /* SkyLight.cpp */,
+				F2635B9B224FE56900CAEEE1 /* SkyLight.h */,
+				F2635B84224FE56800CAEEE1 /* Sun.cpp */,
+				F2635B91224FE56900CAEEE1 /* Sun.h */,
+				F2635B93224FE56900CAEEE1 /* TypeDescriptor.cpp */,
+				F2635BA4224FE56A00CAEEE1 /* TypeDescriptor.h */,
+				F2635BA2224FE56A00CAEEE1 /* UniversalClock.cpp */,
+				F2635B90224FE56900CAEEE1 /* UniversalClock.h */,
+			);
+			name = ogrecaelum;
+			sourceTree = "<group>";
+		};
+		F21BEC75224D91E9001D1B8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2635B82224FC8DB00CAEEE1 /* buildings */,
+				F2635B7C224FC62A00CAEEE1 /* data */,
+				F263572E224FC5BC00CAEEE1 /* skyscraper.ini */,
+				F263572D224FC5AB00CAEEE1 /* ogre.cfg */,
+				F263572C224FC5AA00CAEEE1 /* plugins.cfg */,
+				F2635B80224FC89F00CAEEE1 /* resources.cfg */,
+				F21BE947224D2F34001D1B8A /* Assets.xcassets */,
+				F21BE94F224D2F34001D1B8A /* Skyscraper.entitlements */,
+				F21BE94C224D2F34001D1B8A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F21BE940224D2F31001D1B8A /* Skyscraper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21BE952224D2F34001D1B8A /* Build configuration list for PBXNativeTarget "Skyscraper" */;
+			buildPhases = (
+				F21BE93D224D2F31001D1B8A /* Sources */,
+				F21BE93E224D2F31001D1B8A /* Frameworks */,
+				F21BE93F224D2F31001D1B8A /* Resources */,
+				F21BEB8F224D6C05001D1B8A /* Copy Frameworks */,
+				F263572B224FC57800CAEEE1 /* Copy Configuration & Data */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skyscraper;
+			productName = Skyscraper;
+			productReference = F21BE941224D2F31001D1B8A /* Skyscraper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F21BE939224D2F31001D1B8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					F21BE940224D2F31001D1B8A = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = F21BE93C224D2F31001D1B8A /* Build configuration list for PBXProject "Skyscraper" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F21BE938224D2F31001D1B8A;
+			productRefGroup = F21BE942224D2F31001D1B8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F21BE940224D2F31001D1B8A /* Skyscraper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F21BE93F224D2F31001D1B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F21BE93D224D2F31001D1B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2635BBC224FE56B00CAEEE1 /* TypeDescriptor.cpp in Sources */,
+				F21BEA47224D5A7F001D1B8A /* OgreBulletCollisionsDebugDrawer.cpp in Sources */,
+				F21BEBD6224D6F1B001D1B8A /* textwindow.cpp in Sources */,
+				F21BEBDC224D6F1B001D1B8A /* script_buildings.cpp in Sources */,
+				F21BEA71224D5AAF001D1B8A /* OgreBulletCollisionsConvexHullShape.cpp in Sources */,
+				F2635BC9224FE56B00CAEEE1 /* SkyLight.cpp in Sources */,
+				F21BEA6D224D5AAF001D1B8A /* OgreBulletCollisionsMinkowskiSumShape.cpp in Sources */,
+				F21BE9C2224D314B001D1B8A /* globals.cpp in Sources */,
+				F21BE9D0224D314B001D1B8A /* elevatordoor.cpp in Sources */,
+				F21BEBEE224D6F1B001D1B8A /* profilergui.cpp in Sources */,
+				F21BE9CF224D314B001D1B8A /* floor.cpp in Sources */,
+				F21BE9C8224D314B001D1B8A /* manager.cpp in Sources */,
+				F21BEA88224D5AF3001D1B8A /* OgreBulletCollisionsShape.cpp in Sources */,
+				F21BEBDF224D6F1B001D1B8A /* script_elevators.cpp in Sources */,
+				F21BE9CE224D314B001D1B8A /* light.cpp in Sources */,
+				F2635BC2224FE56B00CAEEE1 /* UniversalClock.cpp in Sources */,
+				F21BEBE6224D6F1B001D1B8A /* createobject.cpp in Sources */,
+				F21BE9BF224D314B001D1B8A /* route.cpp in Sources */,
+				F21BE9D4224D314B001D1B8A /* revolvingdoor.cpp in Sources */,
+				F21BEBED224D6F1B001D1B8A /* scriptprocessor.cpp in Sources */,
+				F21BEA84224D5AF3001D1B8A /* OgreBulletCollisionsObject.cpp in Sources */,
+				F21BE9D1224D314B001D1B8A /* sbs.cpp in Sources */,
+				F21BEBD7224D6F1B001D1B8A /* skyscraper.cpp in Sources */,
+				F21BEBDA224D6F1B001D1B8A /* console.cpp in Sources */,
+				F2635BCB224FE56B00CAEEE1 /* SkyDome.cpp in Sources */,
+				F21BEA48224D5A7F001D1B8A /* OgreBulletCollisionsDebugLines.cpp in Sources */,
+				F21BE9BC224D314B001D1B8A /* cameratexture.cpp in Sources */,
+				F2635BC7224FE56B00CAEEE1 /* CaelumDefaultTypeDescriptorData.cpp in Sources */,
+				F2635BB9224FE56B00CAEEE1 /* FlatCloudLayer.cpp in Sources */,
+				F21BEAB0224D5B7A001D1B8A /* OgreBulletDynamicsConstraint.cpp in Sources */,
+				F21BE9BB224D314B001D1B8A /* control.cpp in Sources */,
+				F21BEAAB224D5B7A001D1B8A /* OgreBulletDynamicsRigidBody.cpp in Sources */,
+				F21BEBE3224D6F1B001D1B8A /* keydialog.cpp in Sources */,
+				F21BEA72224D5AAF001D1B8A /* OgreBulletCollisionsBoxShape.cpp in Sources */,
+				F21BE9B2224D314B001D1B8A /* shaft.cpp in Sources */,
+				F21BE9B5224D314B001D1B8A /* random.cpp in Sources */,
+				F21BEA6B224D5AAF001D1B8A /* OgreBulletCollisionsCompoundShape.cpp in Sources */,
+				F21BE9C4224D314B001D1B8A /* scenenode.cpp in Sources */,
+				F21BEBF1224D6F1B001D1B8A /* debugpanel.cpp in Sources */,
+				F21BEA69224D5AAF001D1B8A /* OgreBulletCollisionsCylinderShape.cpp in Sources */,
+				F2635BBA224FE56B00CAEEE1 /* PointStarfield.cpp in Sources */,
+				F21BEBEB224D6F1B001D1B8A /* script_elevatorcars.cpp in Sources */,
+				F21BE9C7224D314B001D1B8A /* profiler.cpp in Sources */,
+				F21BEAAE224D5B7A001D1B8A /* OgreBulletDynamicsCharacter.cpp in Sources */,
+				F21BEA66224D5AAF001D1B8A /* OgreBulletCollisionsTriangleShape.cpp in Sources */,
+				F21BE9C5224D314B001D1B8A /* timer.cpp in Sources */,
+				F21BE9D5224D314B001D1B8A /* object.cpp in Sources */,
+				F2635BBD224FE56B00CAEEE1 /* CameraBoundElement.cpp in Sources */,
+				F2635BB5224FE56B00CAEEE1 /* Sun.cpp in Sources */,
+				F21BE9C1224D314B001D1B8A /* directional.cpp in Sources */,
+				F21BE9AE224D314B001D1B8A /* door.cpp in Sources */,
+				F21BE9B8224D314B001D1B8A /* elevatorcar.cpp in Sources */,
+				F21BEA70224D5AAF001D1B8A /* OgreBulletCollisionsMultiSphereShape.cpp in Sources */,
+				F2635BC3224FE56B00CAEEE1 /* CaelumSystem.cpp in Sources */,
+				F21BE9B9224D314B001D1B8A /* polygon.cpp in Sources */,
+				F21BEBE1224D6F1B001D1B8A /* script_commands.cpp in Sources */,
+				F2635BB6224FE56B00CAEEE1 /* InternalUtilities.cpp in Sources */,
+				F21BEA96224D5B4D001D1B8A /* OgreBulletDynamicsPoint2pointConstraint.cpp in Sources */,
+				F21BEBD4224D6F1B001D1B8A /* skycontrol.cpp in Sources */,
+				F21BEBD9224D6F1B001D1B8A /* moveobject.cpp in Sources */,
+				F21BEBD8224D6F1B001D1B8A /* cameracontrol.cpp in Sources */,
+				F21BE9BA224D314B001D1B8A /* mesh.cpp in Sources */,
+				F21BE9C0224D314B001D1B8A /* trigger.cpp in Sources */,
+				F21BEBE8224D6F1B001D1B8A /* script_globals.cpp in Sources */,
+				F21BEA87224D5AF3001D1B8A /* OgreBulletCollisionsObjectState.cpp in Sources */,
+				F2635BC8224FE56B00CAEEE1 /* DepthComposer.cpp in Sources */,
+				F21BE9AF224D314B001D1B8A /* movingwalkway.cpp in Sources */,
+				F21BE9CA224D314B001D1B8A /* dynamicmesh.cpp in Sources */,
+				F21BEA99224D5B4D001D1B8A /* OgreBulletDynamicsConeTwistConstraint.cpp in Sources */,
+				F21BE9CD224D314B001D1B8A /* floorindicator.cpp in Sources */,
+				F21BE9CB224D314B001D1B8A /* action.cpp in Sources */,
+				F21BEA9A224D5B4D001D1B8A /* OgreBulletDynamicsRaycastVehicle.cpp in Sources */,
+				F21BEBE4224D6F1B001D1B8A /* objectinfo.cpp in Sources */,
+				F2635BBF224FE56B00CAEEE1 /* ImageStarfield.cpp in Sources */,
+				F21BE9BD224D314B001D1B8A /* soundsystem.cpp in Sources */,
+				F21BE9C6224D314B001D1B8A /* unix.cpp in Sources */,
+				F21BEBE9224D6F1B001D1B8A /* peoplemanager.cpp in Sources */,
+				F21BEBEC224D6F1B001D1B8A /* script_section.cpp in Sources */,
+				F21BEAAC224D5B7A001D1B8A /* OgreBulletDynamicsObjectState.cpp in Sources */,
+				F21BE9B6224D314B001D1B8A /* step.cpp in Sources */,
+				F21BEA97224D5B4D001D1B8A /* OgreBulletDynamics6DofConstraint.cpp in Sources */,
+				F21BE9C3224D314B001D1B8A /* callbutton.cpp in Sources */,
+				F21BE9D2224D314B001D1B8A /* texture.cpp in Sources */,
+				F21BEBE2224D6F1B001D1B8A /* loaddialog.cpp in Sources */,
+				F2635BC5224FE56B00CAEEE1 /* CloudSystem.cpp in Sources */,
+				F21BEBD5224D6F1B001D1B8A /* stackwalker.cpp in Sources */,
+				F2635BC4224FE56B00CAEEE1 /* CaelumPrecompiled.cpp in Sources */,
+				F21BE9BE224D314B001D1B8A /* wall.cpp in Sources */,
+				F21BE9B1224D314B001D1B8A /* elevator.cpp in Sources */,
+				F21BEA67224D5AAF001D1B8A /* OgreBulletCollisionsGImpactShape.cpp in Sources */,
+				F21BEA76224D5ADA001D1B8A /* OgreBulletCollisionsMeshToShapeConverter.cpp in Sources */,
+				F2635BCA224FE56B00CAEEE1 /* Astronomy.cpp in Sources */,
+				F2635BC1224FE56B00CAEEE1 /* GroundFog.cpp in Sources */,
+				F21BEBE7224D6F1B001D1B8A /* parameterviewer.cpp in Sources */,
+				F21BEBD3224D6F1B001D1B8A /* stats.cpp in Sources */,
+				F21BEA6A224D5AAF001D1B8A /* OgreBulletCollisionsConeShape.cpp in Sources */,
+				F2635BB8224FE56B00CAEEE1 /* CaelumScriptTranslator.cpp in Sources */,
+				F21BEBDD224D6F1B001D1B8A /* script_floors.cpp in Sources */,
+				F21BEBEF224D6F1B001D1B8A /* enginecontext.cpp in Sources */,
+				F21BEBF0224D6F1B001D1B8A /* script_textures.cpp in Sources */,
+				F21BEBEA224D6F1B001D1B8A /* mainscreen.cpp in Sources */,
+				F2635BBB224FE56B00CAEEE1 /* FastGpuParamRef.cpp in Sources */,
+				F21BEBDE224D6F1B001D1B8A /* editelevator.cpp in Sources */,
+				F21BEA6F224D5AAF001D1B8A /* OgreBulletCollisionsCapsuleShape.cpp in Sources */,
+				F2635BB7224FE56B00CAEEE1 /* Moon.cpp in Sources */,
+				F2635BC0224FE56B00CAEEE1 /* CaelumPlugin.cpp in Sources */,
+				F21BEA4A224D5A7F001D1B8A /* OgreBulletCollisionsDebugContact.cpp in Sources */,
+				F21BEA9D224D5B61001D1B8A /* OgreBulletDynamicsRagDoll.cpp in Sources */,
+				F21BEA68224D5AAF001D1B8A /* OgreBulletCollisionsStaticPlaneShape.cpp in Sources */,
+				F2635BBE224FE56B00CAEEE1 /* BrightStarCatalogue.cpp in Sources */,
+				F21BE9B3224D314B001D1B8A /* person.cpp in Sources */,
+				F21BEAAD224D5B7A001D1B8A /* OgreBulletDynamicsWorld.cpp in Sources */,
+				F21BE9AD224D314B001D1B8A /* model.cpp in Sources */,
+				F21BEA6C224D5AAF001D1B8A /* OgreBulletCollisionsTrimeshShape.cpp in Sources */,
+				F21BEBE0224D6F1B001D1B8A /* enginemanager.cpp in Sources */,
+				F21BEA6E224D5AAF001D1B8A /* OgreBulletCollisionsSphereShape.cpp in Sources */,
+				F21BEA49224D5A7F001D1B8A /* OgreBulletCollisionsDebugShape.cpp in Sources */,
+				F21BE9D3224D314B001D1B8A /* buttonpanel.cpp in Sources */,
+				F21BE9CC224D314B001D1B8A /* sound.cpp in Sources */,
+				F21BE9B7224D314B001D1B8A /* escalator.cpp in Sources */,
+				F2635BC6224FE56B00CAEEE1 /* PrecipitationController.cpp in Sources */,
+				F21BE9B4224D314B001D1B8A /* texmap.cpp in Sources */,
+				F21BEAAF224D5B7A001D1B8A /* OgreBulletDynamicsPrecompiled.cpp in Sources */,
+				F21BEBDB224D6F1B001D1B8A /* actionviewer.cpp in Sources */,
+				F21BEA86224D5AF3001D1B8A /* OgreBulletCollisionsPrecompiled.cpp in Sources */,
+				F21BEA89224D5AF3001D1B8A /* OgreBulletCollisionsRay.cpp in Sources */,
+				F21BE9C9224D314B001D1B8A /* camera.cpp in Sources */,
+				F21BEBE5224D6F1B001D1B8A /* meshcontrol.cpp in Sources */,
+				F21BEA98224D5B4D001D1B8A /* OgreBulletDynamicsHingeConstraint.cpp in Sources */,
+				F21BEA85224D5AF3001D1B8A /* OgreBulletCollisionsWorld.cpp in Sources */,
+				F21BE9B0224D314B001D1B8A /* stairs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F21BE950224D2F34001D1B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F21BE951224D2F34001D1B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F21BE953224D2F34001D1B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Skyscraper/Skyscraper.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../ogre/lib/macosx;
+				HEADER_SEARCH_PATHS = (
+					"../ogrebullet/Collisions/include/**",
+					../ogrebullet/Dynamics/include,
+					../svnrev,
+					../../bullet3/src,
+					../../bullet3/Extras,
+					"../../FMOD-API/api/lowlevel/inc",
+					../../ogre/include,
+					../../ogre/Components/Overlay/include,
+					../../ogre/OgreMain/include,
+					"../../ogre-caelum/main/include",
+					../../wxWidgets/include,
+					"../../wxWidgets/build-cocoa-release/lib/wx/include/osx_cocoa-unicode-3.1",
+				);
+				INFOPLIST_FILE = Skyscraper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../bullet3/bin,
+					"../../FMOD-API/api/lowlevel/lib",
+					"../../wxWidgets/build-cocoa-release/lib",
+				);
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DwxDEBUG_LEVEL=0",
+					"-DWXUSINGDLL",
+					"-D__WXMAC__",
+					"-D__WXOSX__",
+					"-D__WXOSX_COCOA__",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyscrapersim.Skyscraper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F21BE954224D2F34001D1B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Skyscraper/Skyscraper.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../ogre/lib/macosx;
+				HEADER_SEARCH_PATHS = (
+					"../ogrebullet/Collisions/include/**",
+					../ogrebullet/Dynamics/include,
+					../svnrev,
+					../../bullet3/src,
+					../../bullet3/Extras,
+					"../../FMOD-API/api/lowlevel/inc",
+					../../ogre/include,
+					../../ogre/Components/Overlay/include,
+					../../ogre/OgreMain/include,
+					"../../ogre-caelum/main/include",
+					../../wxWidgets/include,
+					"../../wxWidgets/build-cocoa-release/lib/wx/include/osx_cocoa-unicode-3.1",
+				);
+				INFOPLIST_FILE = Skyscraper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../bullet3/bin,
+					"../../FMOD-API/api/lowlevel/lib",
+					"../../wxWidgets/build-cocoa-release/lib",
+				);
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DwxDEBUG_LEVEL=0",
+					"-DWXUSINGDLL",
+					"-D__WXMAC__",
+					"-D__WXOSX__",
+					"-D__WXOSX_COCOA__",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyscrapersim.Skyscraper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F21BE93C224D2F31001D1B8A /* Build configuration list for PBXProject "Skyscraper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21BE950224D2F34001D1B8A /* Debug */,
+				F21BE951224D2F34001D1B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21BE952224D2F34001D1B8A /* Build configuration list for PBXNativeTarget "Skyscraper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21BE953224D2F34001D1B8A /* Debug */,
+				F21BE954224D2F34001D1B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F21BE939224D2F31001D1B8A /* Project object */;
+}
