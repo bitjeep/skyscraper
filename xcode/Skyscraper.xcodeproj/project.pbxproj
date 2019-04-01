@@ -133,6 +133,9 @@
 		F21BEC0C224D8EAD001D1B8A /* libwxtiff-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBF7224D8EAB001D1B8A /* libwxtiff-3.1.a */; };
 		F21BEC14224D8EAD001D1B8A /* libwxpng-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEBFF224D8EAC001D1B8A /* libwxpng-3.1.a */; };
 		F21BEC19224D8EAD001D1B8A /* libwxjpeg-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BEC04224D8EAD001D1B8A /* libwxjpeg-3.1.a */; };
+		F223A4E2225288840045F6E7 /* libfreetype.6.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F223A4E1225288600045F6E7 /* libfreetype.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F223A4E3225288840045F6E7 /* libfreeimage.3.18.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F223A4E02252884A0045F6E7 /* libfreeimage.3.18.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F223A4E622528B8E0045F6E7 /* libpng16.16.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F223A4E522528B7B0045F6E7 /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F263572F224FC5DB00CAEEE1 /* skyscraper.ini in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572E224FC5BC00CAEEE1 /* skyscraper.ini */; };
 		F2635730224FC5DB00CAEEE1 /* ogre.cfg in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572D224FC5AB00CAEEE1 /* ogre.cfg */; };
 		F2635731224FC5DB00CAEEE1 /* plugins.cfg in Copy Configuration & Data */ = {isa = PBXBuildFile; fileRef = F263572C224FC5AA00CAEEE1 /* plugins.cfg */; };
@@ -194,6 +197,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F223A4E622528B8E0045F6E7 /* libpng16.16.dylib in Copy Frameworks */,
+				F223A4E2225288840045F6E7 /* libfreetype.6.dylib in Copy Frameworks */,
+				F223A4E3225288840045F6E7 /* libfreeimage.3.18.0.dylib in Copy Frameworks */,
 				F2635B7F224FC6C100CAEEE1 /* Cg.framework in Copy Frameworks */,
 				F2AE7C22224EC18500603D42 /* Plugin_CgProgramManager.framework in Copy Frameworks */,
 				F2AE7C1E224EB44F00603D42 /* Codec_FreeImage.framework in Copy Frameworks */,
@@ -459,6 +465,9 @@
 		F21BEBF7224D8EAB001D1B8A /* libwxtiff-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxtiff-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxtiff-3.1.a"; sourceTree = "<group>"; };
 		F21BEBFF224D8EAC001D1B8A /* libwxpng-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxpng-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxpng-3.1.a"; sourceTree = "<group>"; };
 		F21BEC04224D8EAD001D1B8A /* libwxjpeg-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxjpeg-3.1.a"; path = "../../wxWidgets/build-cocoa-release/lib/libwxjpeg-3.1.a"; sourceTree = "<group>"; };
+		F223A4E02252884A0045F6E7 /* libfreeimage.3.18.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreeimage.3.18.0.dylib; path = ../../../../../../usr/local/Cellar/freeimage/3.18.0/lib/libfreeimage.3.18.0.dylib; sourceTree = "<group>"; };
+		F223A4E1225288600045F6E7 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../../../../../usr/local/Cellar/freetype/2.10.0/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		F223A4E522528B7B0045F6E7 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../../usr/local/Cellar/libpng/1.6.36/lib/libpng16.16.dylib; sourceTree = "<group>"; };
 		F263572C224FC5AA00CAEEE1 /* plugins.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = plugins.cfg; path = extras/plugins.cfg; sourceTree = SOURCE_ROOT; };
 		F263572D224FC5AB00CAEEE1 /* ogre.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = ogre.cfg; path = extras/ogre.cfg; sourceTree = SOURCE_ROOT; };
 		F263572E224FC5BC00CAEEE1 /* skyscraper.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = skyscraper.ini; path = ../../skyscraper.ini; sourceTree = "<group>"; };
@@ -929,7 +938,10 @@
 				F21BEB81224D6361001D1B8A /* libBulletDynamics_xcode4_x64_release.a */,
 				F21BEB86224D645E001D1B8A /* libConvexDecomposition_xcode4_x64_release.a */,
 				F21BEB84224D63F9001D1B8A /* libLinearMath_xcode4_x64_release.a */,
+				F223A4E1225288600045F6E7 /* libfreetype.6.dylib */,
+				F223A4E02252884A0045F6E7 /* libfreeimage.3.18.0.dylib */,
 				F21BEB88224D651F001D1B8A /* libfmod.dylib */,
+				F223A4E522528B7B0045F6E7 /* libpng16.16.dylib */,
 				F21BEB98224D6EBD001D1B8A /* libzzip.13.dylib */,
 				F2635B7E224FC69500CAEEE1 /* Cg.framework */,
 				F21BEB8A224D6AB2001D1B8A /* Ogre.framework */,
@@ -1036,6 +1048,7 @@
 				F21BE93F224D2F31001D1B8A /* Resources */,
 				F21BEB8F224D6C05001D1B8A /* Copy Frameworks */,
 				F263572B224FC57800CAEEE1 /* Copy Configuration & Data */,
+				F223A4E4225288AE0045F6E7 /* Rewrite Dylib Paths */,
 			);
 			buildRules = (
 			);
@@ -1087,6 +1100,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F223A4E4225288AE0045F6E7 /* Rewrite Dylib Paths */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Rewrite Dylib Paths";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\ninstall_name_tool -id @rpath/libfreeimage.3.18.0.dylib libfreeimage.3.18.0.dylib\ninstall_name_tool -id @rpath/libfreetype.6.dylib libfreetype.6.dylib\ninstall_name_tool -change /usr/local/opt/libpng/lib/libpng16.16.dylib @rpath/libpng16.16.dylib libfreetype.6.dylib\ninstall_name_tool -id @rpath/libpng16.16.dylib libpng16.16.dylib\ncd Codec_FreeImage.framework\ninstall_name_tool -change /usr/local/opt/freeimage/lib/libfreeimage.dylib @rpath/libfreeimage.3.18.0.dylib Codec_FreeImage\ncd ../OgreOverlay.framework\ninstall_name_tool -change /usr/local/opt/freetype/lib/libfreetype.6.dylib @rpath/libfreetype.6.dylib OgreOverlay\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F21BE93D224D2F31001D1B8A /* Sources */ = {
