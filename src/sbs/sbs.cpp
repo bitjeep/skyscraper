@@ -2765,16 +2765,25 @@ std::string SBS::VerifyFile(std::string filename, bool &result, bool skip_cache)
         Ogre::Archive *archive = factory.createInstance(".", false);
         archive->load();
         bool fileexists = archive->exists(filename);
-        Ogre::StringVectorPtr filelist = archive->list();
+        if (!fileexists && filesystem_listing.isNull())
+        {
+            filesystem_listing = archive->list();
+        }
         factory.destroyInstance(archive);
 #elif OGRE_VERSION >= 0x00010900
         Ogre::FileSystemArchive filesystem(".", "FileSystem", false);
         bool fileexists = filesystem.exists(filename);
-        Ogre::StringVectorPtr filelist = filesystem.list();
+        if (!fileexists && filesystem_listing.isNull())
+        {
+            filesystem_listing = filesystem.list();
+        }
 #else
         Ogre::FileSystemArchive filesystem(".", "FileSystem");
         bool fileexists = filesystem.exists(filename);
-        Ogre::StringVectorPtr filelist = filesystem.list();
+        if (!fileexists && filesystem_listing.isNull())
+        {
+            filesystem_listing = filesystem.list();
+        }
 #endif
 
 		if (fileexists == true)
@@ -2785,9 +2794,6 @@ std::string SBS::VerifyFile(std::string filename, bool &result, bool skip_cache)
 			return filename;
 		}
 
-		//otherwise get listing of files to check
-		if (filesystem_listing.isNull())
-			filesystem_listing = filelist;
 		listing = filesystem_listing;
 	}
 	else
