@@ -388,6 +388,20 @@ std::string TruncateNumber(float value, int decimals)
 	if ((int)value == value)
 		decimals = 0; //value is an integer
 
+#ifdef __APPLE__
+	// C++ APIs are dog slow on Apple OSes because they're just reference implementations
+	// (Apple uses C, Objective-C, and Swift exclusively in their native tech stack)
+	// So let's try using a C API first before we fall back to the slow C++ API
+	char *charbuf = NULL;
+	asprintf(&charbuf, "%.*f", decimals, value);
+	if (charbuf != NULL)
+	{
+		std::string retval(charbuf);
+		free(charbuf);
+		return retval;
+	}
+#endif
+
 	std::stringstream buffer;
 	buffer.precision(decimals);
 	buffer << std::fixed << value;
@@ -401,6 +415,20 @@ std::string TruncateNumber(double value, int decimals)
 
 	if ((int)value == value)
 		decimals = 0; //value is an integer
+
+#ifdef __APPLE__
+	// C++ APIs are dog slow on Apple OSes because they're just reference implementations
+	// (Apple uses C, Objective-C, and Swift exclusively in their native tech stack)
+	// So let's try using a C API first before we fall back to the slow C++ API
+	char *charbuf = NULL;
+	asprintf(&charbuf, "%.*f", decimals, value);
+	if (charbuf != NULL)
+	{
+		std::string retval(charbuf);
+		free(charbuf);
+		return retval;
+	}
+#endif
 
 	std::stringstream buffer;
 	buffer.precision(decimals);
