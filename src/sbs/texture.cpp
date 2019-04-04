@@ -2057,6 +2057,7 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 	Ogre::TextureManager::getSingleton().setVerbose(sbs->Verbose);
 
 	std::string filename2 = filename;
+	std::string lowerfilename2 = SetCaseCopy(filename2, false);
 
 	//determine if the file is a GIF image, to force keycolor alpha
 	std::string extension = filename2.substr(filename.size() - 3);
@@ -2077,10 +2078,23 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 			//get any existing texture
 			mTex = GetTextureByName(filename2, path);
 
+			//if not found, try lowercasing
+			if (mTex.isNull())
+			{
+				mTex = GetTextureByName(lowerfilename2, path);
+			}
+
 			//if not found, load new texture
 			if (mTex.isNull())
 			{
-				mTex = Ogre::TextureManager::getSingleton().load(filename2, path, Ogre::TEX_TYPE_2D, mipmaps);
+				try
+				{
+					mTex = Ogre::TextureManager::getSingleton().load(filename2, path, Ogre::TEX_TYPE_2D, mipmaps);
+				}
+				catch (Ogre::Exception &e)
+				{
+					mTex = Ogre::TextureManager::getSingleton().load(lowerfilename2, path, Ogre::TEX_TYPE_2D, mipmaps);
+				}
 				IncrementTextureCount();
 			}
 
@@ -2097,13 +2111,29 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 			//load based on chroma key for alpha
 
 			texturename = "kc_" + filename2;
+			std::string lowertexturename = "kc_" + lowerfilename2;
 
 			//get any existing texture
 			mTex = GetTextureByName(texturename, path);
 
+			//if not found, try lowercasing
+			if (mTex.isNull())
+			{
+				mTex = GetTextureByName(lowertexturename, path);
+			}
+
 			//if not found, load new texture
 			if (mTex.isNull())
-				mTex = loadChromaKeyedTexture(filename2, path, texturename, Ogre::ColourValue::White);
+			{
+				try
+				{
+					mTex = loadChromaKeyedTexture(filename2, path, texturename, Ogre::ColourValue::White);
+				}
+				catch (Ogre::Exception &e)
+				{
+					mTex = loadChromaKeyedTexture(lowerfilename2, path, lowertexturename, Ogre::ColourValue::White);
+				}
+			}
 
 			if (mTex.isNull())
 			{
@@ -2117,6 +2147,9 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 	{
 		//texture needs to be removed if a load failed
 		Ogre::ResourcePtr wrapper = GetTextureByName(filename2, path);
+		if (wrapper.get())
+			Ogre::TextureManager::getSingleton().remove(wrapper);
+		wrapper = GetTextureByName(lowerfilename2, path);
 		if (wrapper.get())
 			Ogre::TextureManager::getSingleton().remove(wrapper);
 

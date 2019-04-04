@@ -2818,6 +2818,7 @@ std::string SBS::VerifyFile(std::string filename, bool &result, bool skip_cache)
 		std::string check = listing->at(i);
 		std::string checkoriginal = SetCaseCopy(check, false);
 		std::string checkfile = SetCaseCopy(filename, false);
+		Ogre::LogManager::getSingleton().logMessage("checkoriginal: " + checkoriginal + ", checkfile: " + checkfile);
 		if (checkoriginal == checkfile)
 		{
 			//if match is found, cache and exit

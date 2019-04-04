@@ -2041,7 +2041,16 @@ bool MeshObject::LoadFromFile(const std::string &filename, Ogre::MeshPtr &collid
 		{
 			std::string colname = filename2.substr(0, filename2.length() - 5) + ".collider";
 			colname2 = sbs->VerifyFile(colname);
-			collidermesh = Ogre::MeshManager::getSingleton().load(colname2, path);
+			try
+			{
+				collidermesh = Ogre::MeshManager::getSingleton().load(colname2, path);
+			}
+			catch (Ogre::Exception &e)
+			{
+				std::string lowercolname = SetCaseCopy(colname, false);
+				std::string lowercolname2 = sbs->VerifyFile(lowercolname);
+				collidermesh = Ogre::MeshManager::getSingleton().load(lowercolname2, path);
+			}
 		}
 		catch (Ogre::Exception &e)
 		{
