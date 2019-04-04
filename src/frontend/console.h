@@ -52,6 +52,7 @@ class Console: public wxFrame
 		wxTextCtrl* tCommand;
 		//*)
 		void Write(const std::string &message);
+		void ProcessMessages();
 
 	protected:
 
@@ -75,6 +76,7 @@ class Console: public wxFrame
 
 		SBS::SBS *Simcore;
 		Skyscraper *skyscraper;
+		std::string pending_messages;
 
 		DECLARE_EVENT_TABLE()
 };

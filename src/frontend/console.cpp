@@ -140,6 +140,14 @@ void Console::On_Close(wxCloseEvent& event)
 
 void Console::Write(const std::string &message)
 {
+	pending_messages += message + '\n';
+}
+	
+void Console::ProcessMessages()
+{
+	if (pending_messages.empty())
+		return;
+
 	long point = tConsole->GetInsertionPoint();
 	long end = tConsole->GetLastPosition();
 	bool refresh = true;
@@ -150,7 +158,8 @@ void Console::Write(const std::string &message)
 	else
 		refresh = false;
 
-	tConsole->WriteText(message + wxT("\n"));
+	tConsole->WriteText(pending_messages);
+	pending_messages.clear();
 
 	if (refresh == true)
 		tConsole->SetInsertionPoint(point);

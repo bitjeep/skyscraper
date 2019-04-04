@@ -762,6 +762,10 @@ void Skyscraper::Loop()
 
 	ProfileManager::Reset();
 	ProfileManager::Increment_Frame_Counter();
+	
+	//update the console
+	if (console)
+		console->ProcessMessages();
 
 	//main menu routine
 	if (StartupRunning == true)
@@ -1772,23 +1776,12 @@ void Skyscraper::UpdateSky()
 
 void Skyscraper::messageLogged(const Ogre::String &message, Ogre::LogMessageLevel lml, bool maskDebug, const Ogre::String &logName, bool &skipThisMessage)
 {
-#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE
-    if (console)
-    {
-        __block Ogre::String blkMessage = message;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            console->Write(blkMessage);
-            console->Update();
-        });
-    }
-#else
 	//callback function that receives OGRE log messages
 	if (console)
 	{
 		console->Write(message);
 		console->Update();
 	}
-#endif
 }
 
 void Skyscraper::ShowConsole(bool send_button)
