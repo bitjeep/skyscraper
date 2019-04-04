@@ -593,14 +593,7 @@ DynamicMesh::Mesh::Mesh(DynamicMesh *parent, const std::string &name, SceneNode 
 		//load model
 		try
 		{
-			try {
-				MeshWrapper = Ogre::MeshManager::getSingleton().load(filename, path);
-			}
-			catch (Ogre::Exception &e)
-			{
-				std::string lowerfilename = SetCaseCopy(filename, false);
-				MeshWrapper = Ogre::MeshManager::getSingleton().load(lowerfilename, path);
-			}
+			MeshWrapper = Ogre::MeshManager::getSingleton().load(filename, path);
 		}
 		catch (Ogre::Exception &e)
 		{

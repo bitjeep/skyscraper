@@ -2057,7 +2057,6 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 	Ogre::TextureManager::getSingleton().setVerbose(sbs->Verbose);
 
 	std::string filename2 = filename;
-	std::string lowerfilename2 = SetCaseCopy(filename2, false);
 
 	//determine if the file is a GIF image, to force keycolor alpha
 	std::string extension = filename2.substr(filename.size() - 3);
@@ -2078,12 +2077,6 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 			//get any existing texture
 			mTex = GetTextureByName(filename2, path);
 
-			//if not found, try lowercasing
-			if (mTex.isNull())
-			{
-				mTex = GetTextureByName(lowerfilename2, path);
-			}
-
 			//if not found, load new texture
 			if (mTex.isNull())
 			{
@@ -2093,7 +2086,26 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 				}
 				catch (Ogre::Exception &e)
 				{
-					mTex = Ogre::TextureManager::getSingleton().load(lowerfilename2, path, Ogre::TEX_TYPE_2D, mipmaps);
+					// Try uppercasing/lowercasing the file extension since this is a common problem when specifying files
+					size_t dotOffset = filename2.rfind(".");
+					if (dotOffset != std::string::npos)
+					{
+						std::string basename = filename2.substr(0, dotOffset);
+						std::string extension = filename2.substr(dotOffset + 1);
+						if (extension.length() > 0)
+						{
+							try
+							{
+								SetCase(extension, true);
+								mTex = Ogre::TextureManager::getSingleton().load(basename + "." + extension, path, Ogre::TEX_TYPE_2D, mipmaps);
+							}
+							catch (Ogre::Exception &e)
+							{
+								SetCase(extension, false);
+								mTex = Ogre::TextureManager::getSingleton().load(basename + "." + extension, path, Ogre::TEX_TYPE_2D, mipmaps);
+							}
+						}
+					}
 				}
 				IncrementTextureCount();
 			}
@@ -2111,16 +2123,9 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 			//load based on chroma key for alpha
 
 			texturename = "kc_" + filename2;
-			std::string lowertexturename = "kc_" + lowerfilename2;
 
 			//get any existing texture
 			mTex = GetTextureByName(texturename, path);
-
-			//if not found, try lowercasing
-			if (mTex.isNull())
-			{
-				mTex = GetTextureByName(lowertexturename, path);
-			}
 
 			//if not found, load new texture
 			if (mTex.isNull())
@@ -2131,7 +2136,26 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 				}
 				catch (Ogre::Exception &e)
 				{
-					mTex = loadChromaKeyedTexture(lowerfilename2, path, lowertexturename, Ogre::ColourValue::White);
+					// Try uppercasing/lowercasing the file extension
+					size_t dotOffset = filename2.rfind(".");
+					if (dotOffset != std::string::npos)
+					{
+						std::string basename = filename2.substr(0, dotOffset);
+						std::string extension = filename2.substr(dotOffset + 1);
+						if (extension.length() > 0)
+						{
+							try
+							{
+								SetCase(extension, true);
+								mTex = loadChromaKeyedTexture(basename + "." + extension, path, texturename, Ogre::ColourValue::White);
+							}
+							catch (Ogre::Exception &e)
+							{
+								SetCase(extension, false);
+								mTex = loadChromaKeyedTexture(basename + "." + extension, path, texturename, Ogre::ColourValue::White);
+							}
+						}
+					}
 				}
 			}
 
@@ -2147,9 +2171,6 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 	{
 		//texture needs to be removed if a load failed
 		Ogre::ResourcePtr wrapper = GetTextureByName(filename2, path);
-		if (wrapper.get())
-			Ogre::TextureManager::getSingleton().remove(wrapper);
-		wrapper = GetTextureByName(lowerfilename2, path);
 		if (wrapper.get())
 			Ogre::TextureManager::getSingleton().remove(wrapper);
 
@@ -2185,7 +2206,25 @@ Ogre::MaterialPtr TextureManager::GetMaterialByName(const std::string &name, con
 	if (Ogre::ResourceGroupManager::getSingleton().resourceGroupExists(group) == false)
 		return ptr;
 
-	ptr = Ogre::MaterialManager::getSingleton().getByName(ToString(sbs->InstanceNumber) + ":" + name, group);
+	if ((ptr = Ogre::MaterialManager::getSingleton().getByName(ToString(sbs->InstanceNumber) + ":" + name, group)))
+		return ptr;
+
+	// Try uppercasing/lowercasing the file extension
+	size_t dotOffset = name.rfind(".");
+	if (dotOffset != std::string::npos)
+	{
+		std::string basename = name.substr(0, dotOffset);
+		std::string extension = name.substr(dotOffset + 1);
+		if (extension.length() > 0)
+		{
+			SetCase(extension, true);
+			if ((ptr = Ogre::MaterialManager::getSingleton().getByName(ToString(sbs->InstanceNumber) + ":" + basename + "." + extension, group)))
+				return ptr;
+			SetCase(extension, false);
+			ptr = Ogre::MaterialManager::getSingleton().getByName(ToString(sbs->InstanceNumber) + ":" + basename + "." + extension, group);
+		}
+	}
+
 	return ptr;
 }
 
@@ -2229,7 +2268,25 @@ Ogre::TexturePtr TextureManager::GetTextureByName(const std::string &name, const
 	if (Ogre::ResourceGroupManager::getSingleton().resourceGroupExists(group) == false)
 		return ptr;
 
-	ptr = Ogre::TextureManager::getSingleton().getByName(name, group);
+	if ((ptr = Ogre::TextureManager::getSingleton().getByName(name, group)))
+		return ptr;
+
+	// Try uppercasing/lowercasing the file extension
+	size_t dotOffset = name.rfind(".");
+	if (dotOffset != std::string::npos)
+	{
+		std::string basename = name.substr(0, dotOffset);
+		std::string extension = name.substr(dotOffset + 1);
+		if (extension.length() > 0)
+		{
+			SetCase(extension, true);
+			if ((ptr = Ogre::TextureManager::getSingleton().getByName(basename + "." + extension, group)))
+			return ptr;
+			SetCase(extension, false);
+			ptr = Ogre::TextureManager::getSingleton().getByName(basename + "." + extension, group);
+		}
+	}
+	
 	return ptr;
 }
 
