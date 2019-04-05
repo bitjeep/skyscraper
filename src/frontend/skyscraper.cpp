@@ -396,12 +396,12 @@ void Skyscraper::UnloadSim()
 	//remove all meshes
 	Ogre::MeshManager::getSingleton().removeAll();
 
+	//remove all fonts (needs to happen before materials and textures)
+	Ogre::FontManager::getSingleton().removeAll();
+
 	//remove all materials
 	Ogre::MaterialManager::getSingleton().removeAll();
 	Ogre::MaterialManager::getSingleton().initialise();  //restore default materials
-
-	//remove all fonts
-	Ogre::FontManager::getSingleton().removeAll();
 
 	//remove all textures
 	Ogre::TextureManager::getSingleton().removeAll();
