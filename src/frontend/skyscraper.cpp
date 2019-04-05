@@ -251,6 +251,12 @@ bool Skyscraper::OnInit(void)
 		return ReportFatalError("Error loading skyscraper.ini file\nDetails: " + e.getDescription());
 	}
 
+	debuglogging = GetConfigBool("Skyscraper.Frontend.DebugLogging", true);
+
+	//turn off debug logging if specified on command line
+	if (parser->Found(wxT("no-debug-logging")) == true)
+		debuglogging = false;
+
 	showconsole = GetConfigBool("Skyscraper.Frontend.ShowConsole", true);
 
 	//turn off console if specified on command line
@@ -446,7 +452,7 @@ bool Skyscraper::Initialize()
 			if (!logger)
 			{
 				logger = new Ogre::LogManager();
-				Ogre::Log *log = logger->createLog("skyscraper.log", true, !showconsole, false);
+				Ogre::Log *log = logger->createLog("skyscraper.log", true, !showconsole && debuglogging, false);
 				log->addListener(this);
 			}
 
@@ -1787,7 +1793,7 @@ void Skyscraper::messageLogged(const Ogre::String &message, Ogre::LogMessageLeve
 void Skyscraper::ShowConsole(bool send_button)
 {
 	if (!console)
-		console = new Console(this, NULL, -1);
+		console = new Console(this, NULL, debuglogging, -1);
 	console->Show();
 	console->Raise();
 	console->SetPosition(wxPoint(GetConfigInt("Skyscraper.Frontend.ConsoleX", 10), GetConfigInt("Skyscraper.Frontend.ConsoleY", 25)));

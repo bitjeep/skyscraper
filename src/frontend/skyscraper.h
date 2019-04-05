@@ -210,6 +210,7 @@ private:
 	Ogre::ConfigFile *configfile;
 	Caelum::CaelumSystem *mCaelumSystem;
 	Ogre::LogManager* logger;
+	bool debuglogging;
 	bool showconsole;
 	wxProgressDialog *progdialog;
 	wxCmdLineParser *parser;

@@ -40,7 +40,7 @@ class Console: public wxFrame
 {
 	public:
 
-		Console(Skyscraper *root, wxWindow* parent,wxWindowID id=wxID_ANY,const wxPoint& pos=wxDefaultPosition,const wxSize& size=wxDefaultSize);
+		Console(Skyscraper *root, wxWindow* parent, bool enable_logging = true, wxWindowID id=wxID_ANY,const wxPoint& pos=wxDefaultPosition,const wxSize& size=wxDefaultSize);
 		virtual ~Console();
 
 		//(*Declarations(Console)
@@ -77,6 +77,7 @@ class Console: public wxFrame
 		SBS::SBS *Simcore;
 		Skyscraper *skyscraper;
 		std::string pending_messages;
+		bool logging_enabled;
 
 		DECLARE_EVENT_TABLE()
 };

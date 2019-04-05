@@ -51,7 +51,7 @@ BEGIN_EVENT_TABLE(Console,wxFrame)
 	//*)
 END_EVENT_TABLE()
 
-Console::Console(Skyscraper *root, wxWindow* parent,wxWindowID id,const wxPoint& pos,const wxSize& size)
+Console::Console(Skyscraper *root, wxWindow* parent, bool enable_logging, wxWindowID id,const wxPoint& pos,const wxSize& size)
 {
 	//(*Initialize(Console)
 	wxFlexGridSizer* FlexGridSizer1;
@@ -100,6 +100,7 @@ Console::Console(Skyscraper *root, wxWindow* parent,wxWindowID id,const wxPoint&
 	//*)
 	Simcore = 0;
 	skyscraper = root;
+	logging_enabled = enable_logging;
 }
 
 Console::~Console()
@@ -140,7 +141,10 @@ void Console::On_Close(wxCloseEvent& event)
 
 void Console::Write(const std::string &message)
 {
-	pending_messages += message + '\n';
+	if (logging_enabled)
+	{
+		pending_messages += message + '\n';
+	}
 }
 	
 void Console::ProcessMessages()
