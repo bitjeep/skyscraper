@@ -342,7 +342,7 @@ bool TextureManager::UnregisterTextureInfo(std::string name, std::string materia
 	return false;
 }
 
-bool TextureManager::UnloadTexture(const std::string &name, const std::string &group)
+bool TextureManager::UnloadTexture(const std::string &name, const std::string &group, bool decrement_count)
 {
 	//unloads a texture
 
@@ -350,12 +350,13 @@ bool TextureManager::UnloadTexture(const std::string &name, const std::string &g
 	if (wrapper.isNull())
 		return false;
 	Ogre::TextureManager::getSingleton().remove(wrapper);
-	DecrementTextureCount();
+	if (decrement_count)
+		DecrementTextureCount();
 
 	return true;
 }
 
-bool TextureManager::UnloadMaterial(const std::string &name, const std::string &group)
+bool TextureManager::UnloadMaterial(const std::string &name, const std::string &group, bool decrement_count)
 {
 	//unloads a material
 
@@ -363,7 +364,8 @@ bool TextureManager::UnloadMaterial(const std::string &name, const std::string &
 	if (wrapper.isNull())
 		return false;
 	Ogre::MaterialManager::getSingleton().remove(wrapper);
-	DecrementMaterialCount();
+	if (decrement_count)
+		DecrementMaterialCount();
 
 	return true;
 }
@@ -2086,6 +2088,9 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 				}
 				catch (Ogre::Exception &e)
 				{
+					//texture needs to be removed if a load failed
+					UnloadTexture(filename2, path, false);
+
 					// Try uppercasing/lowercasing the file extension since this is a common problem when specifying files
 					size_t dotOffset = filename2.rfind(".");
 					if (dotOffset != std::string::npos)
@@ -2094,15 +2099,18 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 						std::string extension = filename2.substr(dotOffset + 1);
 						if (extension.length() > 0)
 						{
+							filename2 = basename + "." + extension;
 							try
 							{
 								SetCase(extension, true);
-								mTex = Ogre::TextureManager::getSingleton().load(basename + "." + extension, path, Ogre::TEX_TYPE_2D, mipmaps);
+								mTex = Ogre::TextureManager::getSingleton().load(filename2, path, Ogre::TEX_TYPE_2D, mipmaps);
 							}
 							catch (Ogre::Exception &e)
 							{
+								UnloadTexture(filename2, path, false);
 								SetCase(extension, false);
-								mTex = Ogre::TextureManager::getSingleton().load(basename + "." + extension, path, Ogre::TEX_TYPE_2D, mipmaps);
+								filename2 = basename + "." + extension;
+								mTex = Ogre::TextureManager::getSingleton().load(filename2, path, Ogre::TEX_TYPE_2D, mipmaps);
 							}
 						}
 					}
@@ -2136,6 +2144,9 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 				}
 				catch (Ogre::Exception &e)
 				{
+					//texture needs to be removed if a load failed
+					UnloadTexture(filename2, path, false);
+
 					// Try uppercasing/lowercasing the file extension
 					size_t dotOffset = filename2.rfind(".");
 					if (dotOffset != std::string::npos)
@@ -2144,15 +2155,18 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 						std::string extension = filename2.substr(dotOffset + 1);
 						if (extension.length() > 0)
 						{
+							filename2 = basename + "." + extension;
 							try
 							{
 								SetCase(extension, true);
-								mTex = loadChromaKeyedTexture(basename + "." + extension, path, texturename, Ogre::ColourValue::White);
+								mTex = loadChromaKeyedTexture(filename2, path, texturename, Ogre::ColourValue::White);
 							}
 							catch (Ogre::Exception &e)
 							{
+								UnloadTexture(filename2, path, false);
 								SetCase(extension, false);
-								mTex = loadChromaKeyedTexture(basename + "." + extension, path, texturename, Ogre::ColourValue::White);
+								filename2 = basename + "." + extension;
+								mTex = loadChromaKeyedTexture(filename2, path, texturename, Ogre::ColourValue::White);
 							}
 						}
 					}
@@ -2170,11 +2184,8 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 	catch (Ogre::Exception &e)
 	{
 		//texture needs to be removed if a load failed
-		Ogre::ResourcePtr wrapper = GetTextureByName(filename2, path);
-		if (wrapper.get())
-			Ogre::TextureManager::getSingleton().remove(wrapper);
-
-		ReportError("Error loading texture " + filename2 + "\n" + e.getDescription());
+		UnloadTexture(filename2, path, false);
+		ReportError("Error loading texture " + filename + "\n" + e.getDescription());
 		return mTex;
 	}
 
@@ -2281,7 +2292,7 @@ Ogre::TexturePtr TextureManager::GetTextureByName(const std::string &name, const
 		{
 			SetCase(extension, true);
 			if ((ptr = Ogre::TextureManager::getSingleton().getByName(basename + "." + extension, group)))
-			return ptr;
+				return ptr;
 			SetCase(extension, false);
 			ptr = Ogre::TextureManager::getSingleton().getByName(basename + "." + extension, group);
 		}
