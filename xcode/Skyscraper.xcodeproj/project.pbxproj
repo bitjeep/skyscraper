@@ -1069,6 +1069,11 @@
 				TargetAttributes = {
 					F21BE940224D2F31001D1B8A = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1382,6 +1387,7 @@
 				CODE_SIGN_ENTITLEMENTS = Skyscraper/Skyscraper.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = ../../ogre/lib/macosx;
 				HEADER_SEARCH_PATHS = (
 					"../ogrebullet/Collisions/include/**",
@@ -1431,6 +1437,7 @@
 				CODE_SIGN_ENTITLEMENTS = Skyscraper/Skyscraper.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = ../../ogre/lib/macosx;
 				HEADER_SEARCH_PATHS = (
 					"../ogrebullet/Collisions/include/**",
