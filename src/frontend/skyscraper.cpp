@@ -452,7 +452,7 @@ bool Skyscraper::Initialize()
 			if (!logger)
 			{
 				logger = new Ogre::LogManager();
-				Ogre::Log *log = logger->createLog("skyscraper.log", true, !showconsole && debuglogging, false);
+				Ogre::Log *log = logger->createLog("skyscraper.log", true, !showconsole && debuglogging, !debuglogging);
 				log->addListener(this);
 			}
 
