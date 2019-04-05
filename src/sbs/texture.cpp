@@ -2099,10 +2099,10 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 						std::string extension = filename2.substr(dotOffset + 1);
 						if (extension.length() > 0)
 						{
-							filename2 = basename + "." + extension;
 							try
 							{
 								SetCase(extension, true);
+								filename2 = basename + "." + extension;
 								mTex = Ogre::TextureManager::getSingleton().load(filename2, path, Ogre::TEX_TYPE_2D, mipmaps);
 							}
 							catch (Ogre::Exception &e)
@@ -2155,10 +2155,10 @@ Ogre::TexturePtr TextureManager::LoadTexture(const std::string &filename, int mi
 						std::string extension = filename2.substr(dotOffset + 1);
 						if (extension.length() > 0)
 						{
-							filename2 = basename + "." + extension;
 							try
 							{
 								SetCase(extension, true);
+								filename2 = basename + "." + extension;
 								mTex = loadChromaKeyedTexture(filename2, path, texturename, Ogre::ColourValue::White);
 							}
 							catch (Ogre::Exception &e)
