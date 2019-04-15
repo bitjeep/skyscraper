@@ -73,6 +73,7 @@ MainScreen::MainScreen(Skyscraper *parent, int width, int height) : wxFrame(0, -
 	SetTitle(title);
 	SetClientSize(width, height);
 	SetExtraStyle(wxWS_EX_PROCESS_IDLE);
+	SetBackgroundStyle(wxBG_STYLE_PAINT);
 
 	//reset input states
 	boxes = false;
